@@ -30,7 +30,7 @@
                 /><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" /></svg>
                 {{ item.kind }}
               </span>
-              <span class="text-sm">14 days ago</span>
+              <span class="text-sm">{{ useTimeAgo(item.date).value }}</span>
             </div>
             <div class="pb-5">
               <NuxtLink :href="item._path">
@@ -80,6 +80,7 @@
 </template>
 
 <script setup lang="ts">
+import { useTimeAgo } from '@vueuse/core'
 import team from '~/assets/team/current.json'
 
 const getAuthors = (ids) => {
