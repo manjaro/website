@@ -5,7 +5,7 @@ date: 2024-02-15 12:00:00
 kind: article
 image: header.png
 description: "Immerse Yourself In The Gaming Universe."
-authors: [vitor-lopes]
+authors: [vlopes]
 ---
 In recent years, there has been a noticeable growth in gaming support for Linux,
 thanks to initiatives like Valve's Proton, which enables Windows games to run on Linux systems.

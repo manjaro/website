@@ -1,0 +1,28 @@
+[
+    {
+        "id": "vlopes",
+        "name": "Vitor Lopes",
+        "role": "lead web developer",
+        "image": "jpg",
+        "description": "Joined the project in 2018, works on the web side of things, some software applications and Gnome testing. Prefers working with web technologies and enjoys solving problems with Python or JavaScript.",
+        "social": {
+            "github": "https://github.com/codesardine",
+            "x": "https://twitter.com/codesardine",
+            "forum": "https://forum.manjaro.org/u/codesardine/"
+        },
+        "pos": 3
+    },
+    {
+        "id": "romangg",
+        "name": "Roman Gilg",
+        "role": "technical lead",
+        "image": "jpg",
+        "description": "Roman is a software architect with notable contributions to many open source projects. He also specializes in platform engineering and project management.",
+        "social": {
+            "github": "https://github.com/codesardine",
+            "x": "https://twitter.com/codesardine",
+            "forum": "https://forum.manjaro.org/u/codesardine/"
+        },
+        "pos": 2
+    }
+]

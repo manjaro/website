@@ -30,7 +30,7 @@
             <ul class="mt-2 space-y-2">
               <li>
                 <a
-                  href="/"
+                  href="/team"
                   class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >Team</a>
               </li>

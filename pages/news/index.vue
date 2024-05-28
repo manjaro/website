@@ -48,11 +48,11 @@
               <div class="flex items-center space-x-4">
                 <img
                   class="w-7 h-7 rounded-full"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                  :src="'/team/' + getAuthors(item.authors)[0].id + '.' + getAuthors(item.authors)[0].image"
                   alt="Jese Leos avatar"
                 >
                 <span class="font-medium dark:text-white">
-                  Jese Leos
+                  {{ getAuthors(item.authors)[0].name }}
                 </span>
               </div>
               <NuxtLink
@@ -80,6 +80,13 @@
 </template>
 
 <script setup lang="ts">
+import team from '~/assets/team/current.json'
+
+const getAuthors = (ids) => {
+  const ret = team.filter(obj => obj.id == ids[0])
+  return ret
+}
+
 useHead({
   title: 'News' + ' – manjaro.org',
 })

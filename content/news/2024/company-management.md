@@ -5,7 +5,7 @@ date: 2024-04-04 12:00:00
 kind: article
 image: header.jpg
 description: "Roman Gilg joins the Manjaro Company as CTO."
-authors: [vitor-lopes]
+authors: [vlopes]
 ---
 Manjaro is not only a community project that provides one of the most widely used Linux distributions, but since 2019 Manjaro has also been incorporated as a German company. This incorporation allows commercial vendors and consumers to have an official partner to engage with.
 
