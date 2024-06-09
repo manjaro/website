@@ -184,12 +184,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  methods: {
-    get_year() {
-      return new Date().getFullYear()
-    },
-  },
+<script setup lang="ts">
+const get_year = () => {
+  return new Date().getFullYear()
 }
 </script>
