@@ -19,7 +19,7 @@
             <img
               alt="team"
               class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-              :src="'/team/' + member.id + '.' + member.image"
+              :src="getPicture(member.id, member.image)"
             >
             <div class="flex-grow sm:pl-8">
               <h2 class="title-font font-medium text-lg text-gray-900 dark:text-gray-200">
@@ -107,4 +107,12 @@ useHead({
 })
 
 const sortedTeam = team.sort((a, b) => a.pos - b.pos)
+const getPicture = (user_id: string, file_type: string) => {
+  if (file_type) {
+    return '/team/' + user_id + '.' + file_type
+  }
+  else {
+    return '/team/jaro-avatar.png'
+  }
+}
 </script>
