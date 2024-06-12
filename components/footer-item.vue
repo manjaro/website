@@ -106,10 +106,9 @@
             <ul class="mt-2 space-y-2">
               <li>
                 <a
-                  href="/"
+                  href="/privacy-policy"
                   class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >Privacy
-                  Police</a>
+                >Privacy Policy</a>
               </li>
               <li>
                 <a
@@ -120,7 +119,7 @@
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/imprint"
                   class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >Imprint</a>
               </li>
