@@ -10,7 +10,7 @@
       <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         {{ data!.title }}
       </h1>
-      <section class="text-lg">
+      <section class="prose dark:prose-invert">
         <ContentRenderer :value="data" />
       </section>
     </article>
