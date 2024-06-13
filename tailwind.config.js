@@ -5,6 +5,19 @@ export default {
     typography(),
     require('daisyui'),
   ],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/theming/themes')['light'],
+          primary: '#247BA0',
+          secondary: '#F49FBC',
+          accent: '#35BFA4',
+        },
+      },
+      'dark',
+    ],
+  },
   theme: {
     extend: {
       colors: {
