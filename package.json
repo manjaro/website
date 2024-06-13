@@ -23,6 +23,7 @@
     "@tailwindcss/typography": "^0.5.13",
     "@vueuse/core": "^10.10.0",
     "@vueuse/nuxt": "^10.10.0",
+    "daisyui": "^4.12.2",
     "eslint": "^9.3.0"
   }
 }
