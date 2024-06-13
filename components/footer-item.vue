@@ -36,7 +36,7 @@
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/donate"
                   class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >Donate</a>
               </li>
