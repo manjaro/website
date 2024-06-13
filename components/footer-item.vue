@@ -87,7 +87,8 @@
               </li>
               <li>
                 <a
-                  href="/"
+                  href="https://manjaristas.org/branch_compare"
+                  target="_blank"
                   class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >Packages</a>
               </li>
