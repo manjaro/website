@@ -26,5 +26,10 @@
     "@vueuse/nuxt": "^10.10.0",
     "daisyui": "^4.12.2",
     "eslint": "^9.3.0"
-  }
+  },
+  "pnpm": {
+    "overrides": {
+        "sharp": "0.33.4"
+    }
+}
 }
