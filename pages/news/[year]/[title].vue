@@ -7,7 +7,7 @@
           alt="Header image"
         >
       </div>
-      <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-400">
         {{ data!.title }}
       </h1>
       <section class="prose dark:prose-invert">
