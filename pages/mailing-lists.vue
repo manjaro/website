@@ -1,11 +1,11 @@
 <template>
   <div class="max-w-screen-sm mx-auto pt-10">
     <div class="flex flex-col items-center">
-      <img
+      <NuxtImg
         src="/mailing-lists.jpg"
         alt="Mail"
         width="400px"
-      >
+      />
       <div class="py-8 prose dark:prose-invert">
         <h2>Mailing Lists</h2>
         <ul>

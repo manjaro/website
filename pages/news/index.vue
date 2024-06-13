@@ -34,7 +34,10 @@
             </div>
             <div class="pb-5">
               <NuxtLink :href="item._path">
-                <img :src="getImagePath(item._path!, item.image!)"></NuxtLink>
+                <NuxtImg
+                  :src="getImagePath(item._path!, item.image!)"
+                  width="500"
+                /></NuxtLink>
             </div>
             <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               <NuxtLink :href="item._path">

@@ -2,10 +2,11 @@
   <div class="max-w-screen-sm mx-auto">
     <article>
       <div class="py-10">
-        <img
+        <NuxtImg
           :src="imgPath"
           alt="Header image"
-        >
+          width="600px"
+        />
       </div>
       <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-400">
         {{ data!.title }}
