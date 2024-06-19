@@ -114,7 +114,7 @@
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/terms-of-use"
                   class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >Terms
                   Of Use</a>
