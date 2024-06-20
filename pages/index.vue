@@ -14,11 +14,13 @@
               your system while also providing stable foundations.
             </p>
             <div class="flex flex-wrap gap-y-4 gap-x-8 mt-8">
-              <button
-                class="btn"
-              >
-                Download
-              </button>
+              <NuxtLink href="/download">
+                <button
+                  class="btn"
+                >
+                  Download
+                </button>
+              </NuxtLink>
             </div>
           </div>
           <div class="max-lg:mt-12 h-full">
