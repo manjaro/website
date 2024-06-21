@@ -1,5 +1,174 @@
 [
     {
+        "id": "simonb",
+        "name": "Simon Büeler",
+        "role": "devops engineer",
+        "image": "",
+        "description": "Sway edition, infrastructure and software packaging.",
+        "social": {
+            "github": "https://github.com/Manjaro-Sway",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 16
+    },
+    {
+        "id": "jonasstr",
+        "name": "Jonas Strassel",
+        "role": "devops engineer",
+        "image": "jpg",
+        "description": "Sway edition, infrastructure and software packaging.",
+        "social": {
+            "github": "https://github.com/boredland",
+            "x": "https://twitter.com/boredland069",
+            "forum": "https://forum.manjaro.org/u/boredland"
+        },
+        "pos": 15
+    },
+    {
+        "id": "mwagie",
+        "name": "Mark Wagie",
+        "role": "community manager",
+        "image": "",
+        "description": "Besides working with the community he also works on GNOME Edition and packaging.",
+        "social": {
+            "github": "https://github.com/yochananmarqos",
+            "x": "",
+            "forum": "https://forum.manjaro.org/u/yochanan"
+        },
+        "pos": 14
+    },
+    {
+        "id": "raysher",
+        "name": "Ray Sherwin",
+        "role": "arm developer",
+        "image": "",
+        "description": "Works on Raspberry Pi devices and kernels.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 13
+    },
+    {
+        "id": "furkank",
+        "name": "Furkan Kardame",
+        "role": "arm developer",
+        "image": "",
+        "description": "Collaborates on ARM editions, tools and infrastructure.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 12
+    },
+    {
+        "id": "tobiass",
+        "name": "Tobias Schramm",
+        "role": "arm kernel developer",
+        "image": "",
+        "description": "Wrote mainline Linux kernel support for the Pinebook Pro, hardware and electronics debugging, works on ARM device support.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 11
+    },
+    {
+        "id": "jcrow",
+        "name": "Josh Crowder",
+        "role": "arm developer",
+        "image": "",
+        "description": "Collaborates on ARM editions, tools and infrastructure.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 10
+    },
+    {
+        "id": "fredhun",
+        "name": "Frede Hundewadt",
+        "role": "developer",
+        "image": "",
+        "description": "Frede is the author of pacman-mirrors, he does software maintenance and helps in the forum.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 9
+    },
+    {
+        "id": "mattih",
+        "name": "Matti Hyttinen",
+        "role": "developer",
+        "image": "jpg",
+        "description": "Matti works on Gnome edition, Gnome Layout Switcher and packaging, he enjoys solving problems with Python or Bash.",
+        "social": {
+            "github": "https://github.com/manjaro-gnome",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 8
+    },
+    {
+        "id": "stefcap",
+        "name": "Stefano Capitani",
+        "role": "developer",
+        "image": "jpg",
+        "description": "Stefano lives and breathes Gnome. He works on packages and development tools and enjoys solving problems with Bash.",
+        "social": {
+            "github": "https://github.com/Ste74",
+            "x": "https://twitter.com/capitani74",
+            "forum": "https://forum.manjaro.org/u/ste74"
+        },
+        "pos": 7
+    },
+    {
+        "id": "guilben",
+        "name": "Guillaume Benoit",
+        "role": "developer",
+        "image": "",
+        "description": "One of the original founders who works on Pamac and related software management tools. Prefers working with the Gnome stack.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 6
+    },
+    {
+        "id": "artemg",
+        "name": "Artem Grinev",
+        "role": "developer",
+        "image": "jpg",
+        "description": "Artem is a KDE head and prefers working with the QT toolkit. Works on development tools, software and infrastructure.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": "https://forum.manjaro.org/u/lordtermor"
+        },
+        "pos": 5
+    },
+    {
+        "id": "berland",
+        "name": "Bernhard Landauer",
+        "role": "developer",
+        "image": "jpg",
+        "description": "Bernhard joined the project in 2015. He works on our development tools, kernels, custom hardware projects, devops and the Plasma edition. Additionally he is the maintainer of the i3 and Cinnamon Community editions.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": "https://forum.manjaro.org/u/oberon/"
+        },
+        "pos": 4
+    },
+    {
         "id": "vlopes",
         "name": "Vitor Lopes",
         "role": "lead web developer",
