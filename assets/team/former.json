@@ -1,0 +1,93 @@
+[
+    {
+        "id": "",
+        "name": "Bogdan Covaciu",
+        "role": "",
+        "image": "",
+        "description": "Bogdan is the author of our friendly mascot, worked on all design related projects from wallpapers to media pamphlets, software testing and forum moderation.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 7
+    },
+    {
+        "id": "",
+        "name": "Oğuz Kağan Eren",
+        "role": "",
+        "image": "",
+        "description": "Oğuz was the wiki maintainer and developer of some native applications.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 6
+    },
+    {
+        "id": "",
+        "name": "Dan Johansen",
+        "role": "",
+        "image": "",
+        "description": "Dan was involved in ARM builds and testing.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 5
+    },
+    {
+        "id": "",
+        "name": "Jonathon Fernyhough",
+        "role": "",
+        "image": "",
+        "description": "Jonathon was involved with 32bit builds package maintenance and the forum.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 4
+    },
+    {
+        "id": "",
+        "name": "Hugo Posnic",
+        "role": "",
+        "image": "",
+        "description": "Hugo was the author of manjaro hello and manjaro-web-repo along with contributions for pacman-mirrors and public relations in trade shows.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 3
+    },
+    {
+        "id": "",
+        "name": "Ramon Buldó",
+        "role": "",
+        "image": "",
+        "description": "Ramon initially developed Manjaro Settings Manager with kde integration.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 2
+    },
+    {
+        "id": "",
+        "name": "Roland Singer",
+        "role": "",
+        "image": "",
+        "description": "Roland was one of the founders and developed the initial infrastructure and tools.",
+        "social": {
+            "github": "",
+            "x": "",
+            "forum": ""
+        },
+        "pos": 1
+    }
+]
