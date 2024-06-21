@@ -1,0 +1,52 @@
+{
+    "plasma": {
+        "name": "KDE Plasma",
+        "image": "",
+        "description": "Plasma desktop offers the most complete configurations and options inside a UI. The UI resembles Windows layout."
+    },
+    "gnome": {
+        "name": "GNOME",
+        "image": "",
+        "description": "GNOME is a modern desktop, the layout is different from other options but easy and intuitive to learn."
+    },
+    "xfce": {
+        "name": "Xfce",
+        "image": "",
+        "description": "Xfce is a lightweight desktop. It aims to be fast and low on system resources, while being rock solid."
+    },
+    "mate": {
+        "name": "MATE",
+        "image": "",
+        "description": "The MATE desktop is a derivative of the now deprecated GNOME 2. It provides an intuitive desktop using traditional metaphors."
+    },
+    "cinnamon": {
+        "name": "Cinnamon",
+        "image": "",
+        "description": "Cinnamon is a desktop that follows traditional desktop conventions. The UI resembles Windows layout."
+    },
+    "i3": {
+        "name": "i3 Window Manager",
+        "image": "",
+        "description": "i3 is a tiling X11 window manager, and not a complete desktop environment."
+    },
+    "minimal": {
+        "name": "Minimal",
+        "image": "",
+        "description": "Without desktop environment, suitable for advanced users that would like to build their own setups from the ground up."
+    },
+    "plasma-mobile": {
+        "name": "Plasma Mobile",
+        "image": "",
+        "description": "Phone UI based on KDE Plasma, built with KDE/QT and Kirigami technologies."
+    },
+    "phosh": {
+        "name": "Phosh",
+        "image": "",
+        "description": "Phosh is a UI based on GNOME technologies for mobile. It is the default graphical shell on Purism’s commercial phones."
+    },
+    "sway": {
+        "name": "Sway WM",
+        "image": "",
+        "description": "Sway is a tiling Wayland compositor and a drop-in replacement for the I3 window manager."
+    }
+}
