@@ -1,12 +1,12 @@
 <template>
   <section>
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-        <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+      <div class="flex flex-col text-center w-full mb-14">
+        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
           News and Announcements
-        </h2>
-        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-          Articles about development and organization of the Manjaro project.
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed">
+          Articles about development and organization of the Manjaro project
         </p>
       </div>
       <div class="grid gap-8 lg:grid-cols-2">
