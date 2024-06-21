@@ -15,6 +15,7 @@
             <NuxtImg
               src="/x86.jpg"
               alt=""
+              width="600"
               class="object-cover w-full lg:absolute h-80 lg:h-full"
             />
             <svg
@@ -77,6 +78,7 @@
             <NuxtImg
               src="/arm.jpg"
               alt=""
+              width="500"
               class="object-cover w-full lg:h-56 sm:h-64"
             />
             <svg
@@ -100,7 +102,8 @@
         <NuxtImg
           src="/construction.png"
           alt=""
-          class="object-contain h-52 pt-8 grayscale"
+          width="200"
+          class="object-contain h-52 pt-8 grayscale place-self-center"
         />
       </div>
     </div>

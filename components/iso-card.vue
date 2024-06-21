@@ -5,7 +5,8 @@
         <NuxtImg
           :src="'/desktops/' + desktopId + '.webp'"
           alt="Desktop image"
-          class="h-40"
+          width="400"
+          class="object-scale-down h-40"
         />
       </figure>
       <div class="card-body">

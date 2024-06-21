@@ -23,10 +23,11 @@
               </NuxtLink>
             </div>
           </div>
-          <div class="max-lg:mt-12 h-full">
+          <div class="max-lg:mt-12 h-full place-self-center">
             <NuxtImg
               src="desktops.png"
               alt="Gnome, KDE desktops"
+              width="700px"
             />
           </div>
         </div>
@@ -49,6 +50,7 @@
           <NuxtImg
             src="branch.png"
             alt="feature"
+            height="300px"
             class="h-full"
           />
         </div>
@@ -61,7 +63,7 @@
           <div class="w-full h-full">
             <NuxtImg
               src="company.jpg"
-              alt="Premium Benefits"
+              height="500px"
               class="w-full h-full object-cover"
             />
           </div>
