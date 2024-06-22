@@ -55,7 +55,7 @@
             Full
           </div>
         </div>
-        <div class="flex grid grid-cols-2 gap-4 pt-8">
+        <div class="grid grid-cols-2 gap-4 pt-8">
           <button class="btn btn-secondary">
             <NuxtLink :href="getDetailEntry('torrent')">
               Torrent
