@@ -1,0 +1,52 @@
+name: CI
+on:
+  - push
+  - pull_request
+jobs:
+  message-lint:
+    uses: ./.github/workflows/commit-lint.yml
+    with:
+      upstream-repo: https://github.com/manjaro/website.git
+
+  eslint:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        node-version: [20]
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        version: 9
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+    - name: Install dependencies
+      run: pnpm install
+    - name: Run eslint
+      run: pnpm lint
+
+  build:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        node-version: [20]
+        build-type: ['build', 'generate']
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        version: 9
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+    - name: Install dependencies
+      run: pnpm install
+    - name: ${{ matrix.build-type }} website
+      run: pnpm ${{ matrix.build-type }}
