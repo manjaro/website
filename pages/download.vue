@@ -18,6 +18,8 @@
           :desktop-id="title"
           :desktop-data="getDesktopData(title)"
           :iso-data="iso"
+          :show-details="title == latestDetailCard"
+          @details-toggled="handleDetailsClick"
         />
       </div>
     </div>
@@ -40,6 +42,8 @@
           :desktop-id="title"
           :desktop-data="getDesktopData(title)"
           :iso-data="iso"
+          :show-details="title == latestDetailCard"
+          @details-toggled="handleDetailsClick"
         />
       </div>
     </div>
@@ -70,5 +74,16 @@ const isos = JSON.parse(data?.value as string)
 
 const getDesktopData = (title: string) => {
   return desktops[title]
+}
+
+const latestDetailCard = ref('')
+
+const handleDetailsClick = (title: string, enabled: boolean) => {
+  if (enabled) {
+    latestDetailCard.value = title
+  }
+  else if (latestDetailCard.value === title) {
+    latestDetailCard.value = ''
+  }
 }
 </script>
