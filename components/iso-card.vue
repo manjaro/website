@@ -29,7 +29,7 @@
         <button
           v-if="!isoData.custom"
           class="btn"
-          @click="toggleDetails"
+          @click="enableDetails"
         >
           More
         </button>
@@ -107,7 +107,7 @@
       <div class="flex flex-row card-actions">
         <button
           class="btn"
-          @click="toggleDetails"
+          @click="disableDetails"
         >
           Back
         </button>
@@ -120,8 +120,10 @@
 const props = defineProps({
   desktopId: { type: String, required: true },
   desktopData: { type: Object, required: true },
-  isoData: { type: Object, required: true } },
+  isoData: { type: Object, required: true },
+  showDetails: { type: Boolean, required: true } },
 )
+const emit = defineEmits(['details-toggled'])
 
 function getDownloadLink() {
   if (props.isoData.custom) {
@@ -133,12 +135,18 @@ function getDownloadLink() {
   return props.isoData.image
 }
 
-const showDetails = ref(false)
+const showDetailsRef = ref(props.showDetails)
 const fullImage = ref(false)
 
-function toggleDetails() {
-  showDetails.value = !showDetails.value
+const enableDetails = () => {
+  showDetailsRef.value = true
+  emit('details-toggled', props.desktopId, true)
 }
+const disableDetails = () => {
+  showDetailsRef.value = false
+  emit('details-toggled', props.desktopId, false)
+}
+
 function toggleFullImage() {
   fullImage.value = !fullImage.value
 }

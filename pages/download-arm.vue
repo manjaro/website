@@ -32,6 +32,8 @@
           :desktop-id="title"
           :desktop-data="getDesktopData(title)"
           :iso-data="iso"
+          :show-details="title == latestDetailCard"
+          @details-toggled="handleDetailsClick"
         />
       </div>
     </div>
@@ -65,4 +67,14 @@ const getDesktopData = (title: string) => {
 }
 
 const selectedDevice = ref('Generic')
+const latestDetailCard = ref('')
+
+const handleDetailsClick = (title: string, enabled: boolean) => {
+  if (enabled) {
+    latestDetailCard.value = title
+  }
+  else if (latestDetailCard.value === title) {
+    latestDetailCard.value = ''
+  }
+}
 </script>
