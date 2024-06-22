@@ -41,3 +41,10 @@ This repository's code is licensed under the Apache License 2.0. See the [LICENS
 
 ### Content
 All content (text, images, etc.) in this repository is © 2024 Manjaro GmbH & Co. KG. All rights reserved.
+
+## Contributing
+### Preparing Changes
+We are always happy about fixes for bugs or small design issues. Thanks in advance! If you plan to do larger changes, please create first an issue ticket to let us discuss your plans, so in the end your changes will align with our overall plans for the website and can be merged.
+
+### Content Copyright
+Ensure you have permission to include any non-code content that is part of your contributions and be aware that for [above content license](#content) you grant Manjaro GmbH & Co. KG all rights to that content.
