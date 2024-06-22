@@ -12,9 +12,12 @@
         >
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Manjaro</span>
       </NuxtLink>
-      <div class="dropdown dropdown-end md:hidden">
+      <details
+        id="dropdown"
+        class="dropdown dropdown-end md:hidden"
+      >
         <span class="sr-only">Open main menu</span>
-        <div
+        <summary
           tabindex="0"
           role="button"
           class="btn btn-ghost btn-circle"
@@ -34,28 +37,40 @@
               d="M1 1h15M1 7h15M1 13h15"
             />
           </svg>
-        </div>
+        </summary>
         <div class="menu menu-lg dropdown-content mt-1 mr-3 z-[1] p-2 pb-5 shadow bg-base-100">
           <ul
             tabindex="0"
           >
             <li>
-              <NuxtLink href="/products">
+              <NuxtLink
+                href="/products"
+                @click="hideDropDownMenu"
+              >
                 Products
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink href="/enterprise">
+              <NuxtLink
+                href="/enterprise"
+                @click="hideDropDownMenu"
+              >
                 Enterprise
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink href="/help">
+              <NuxtLink
+                href="/help"
+                @click="hideDropDownMenu"
+              >
                 Help
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink href="/news">
+              <NuxtLink
+                href="/news"
+                @click="hideDropDownMenu"
+              >
                 News
               </NuxtLink>
             </li>
@@ -90,7 +105,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </details>
 
       <div
         id="navbar-default"
@@ -173,4 +188,23 @@ const toggleTheme = () => {
     colorMode.preference = 'light'
   }
 }
+
+const hideDropDownMenu = () => {
+  document.getElementById('dropdown')!.removeAttribute('open')
+}
+
+const onScroll = () => {
+  hideDropDownMenu()
+}
+const onClick = (event: Event) => {
+  if (!document.getElementById('dropdown')!.contains(event.target)) {
+    // Click was outside the dropdown, close it
+    hideDropDownMenu()
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', onScroll)
+  window.addEventListener('click', onClick)
+})
 </script>
