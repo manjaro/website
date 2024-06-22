@@ -235,7 +235,10 @@
       </div>
     </div>
 
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:py-10">
+    <div
+      id="contact-us"
+      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:py-10"
+    >
       <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl">
         <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-teal-accent-400">
           Contact Us

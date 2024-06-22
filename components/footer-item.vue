@@ -56,19 +56,19 @@
               <ul class="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
-                    class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Customers</a>
-                </li>
-                <li>
-                  <a
-                    href="/"
+                    href="/partners"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >Partners</a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="/dpp"
+                    class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  >DPP</a>
+                </li>
+                <li>
+                  <a
+                    href="/enterprise#contact-us"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >Contact</a>
                 </li>
