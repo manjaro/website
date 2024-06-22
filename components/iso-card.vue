@@ -42,9 +42,12 @@
       <h2 class="card-title">
         {{ desktopData.name }}
       </h2>
-      <p class="flex justify-center">
+      <p class="flex justify-center pb-2">
         <span class="grid grid-cols-1 self-center gap-8 pt-2">
-          <div class="flex relative justify-center">
+          <div
+            v-if="isoData.minimal !== undefined"
+            class="flex relative justify-center"
+          >
             <input
               type="checkbox"
               class="toggle toggle-primary"
@@ -69,7 +72,10 @@
                 Image
               </NuxtLink>
             </button>
-            <button class="btn btn-accent">
+            <button
+              v-if="getDetailEntry('signature')"
+              class="btn btn-accent"
+            >
               <NuxtLink :href="getDetailEntry('signature')">
                 Signature
               </NuxtLink>
@@ -98,7 +104,7 @@
           </div>
         </span>
       </p>
-      <div class="flex flex-row mt-4 card-actions">
+      <div class="flex flex-row card-actions">
         <button
           class="btn"
           @click="toggleDetails"
