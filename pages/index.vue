@@ -98,9 +98,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-useHead({
-  title: 'Manjaro' + ' – manjaro.org',
-})
-</script>
