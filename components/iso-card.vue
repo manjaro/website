@@ -129,14 +129,11 @@ function getDownloadLink() {
   if (props.isoData.custom) {
     return props.isoData.custom
   }
-  if (props.isoData.minimal) {
-    return props.isoData.minimal.image
-  }
   return props.isoData.image
 }
 
 const showDetailsRef = ref(props.showDetails)
-const fullImage = ref(false)
+const fullImage = ref(true)
 
 const enableDetails = () => {
   showDetailsRef.value = true
