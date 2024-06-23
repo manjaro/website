@@ -13,7 +13,7 @@
         <div class="flex flex-col max-w-screen-lg overflow-hidden border dark:border-2 dark:border-gray-800 rounded shadow-sm lg:flex-row sm:mx-auto">
           <div class="relative lg:w-1/2">
             <NuxtImg
-              src="/x86.jpg"
+              src="/x86.webp"
               alt=""
               width="600"
               class="object-cover w-full lg:absolute h-80 lg:h-full"
@@ -76,7 +76,7 @@
           </div>
           <div class="justify-center lg:w-1/2 grayscale">
             <NuxtImg
-              src="/arm.jpg"
+              src="/arm.webp"
               alt=""
               width="500"
               class="object-cover w-full lg:h-56 sm:h-64"
