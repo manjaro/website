@@ -1,11 +1,11 @@
 <template>
-  <section class="text-gray-600 body-font dark:text-gray-400">
-    <div class="container px-5 pt-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
+  <section>
+    <div class="container px-5 pt-12 mx-auto">
+      <div class="flex flex-col text-center w-full mb-16">
+        <h1 class="text-3xl font-medium mb-4">
           Partners and Sponsors
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-700 dark:text-gray-400">
           We are grateful for the partnerships with the following companies.
         </p>
       </div>
@@ -13,7 +13,7 @@
         <h2 class="text-lg tracking-wide pb-10">
           Hardware Partners
         </h2>
-        <div class="flex flex-wrap gap-10 justify-center">
+        <div class="flex flex-wrap gap-10 justify-center text-gray-600 dark:text-gray-400">
           <div class="max-w-80 border rounded-2xl overflow-hidden">
             <NuxtLink
               href="https://slimbook.com/"
@@ -77,7 +77,7 @@
         <h2 class="text-lg tracking-wide pb-10">
           Infrastructure Support
         </h2>
-        <div class="flex flex-wrap gap-10 justify-center">
+        <div class="flex flex-wrap gap-10 justify-center text-gray-600 dark:text-gray-400">
           <div class="max-w-80 border rounded-2xl overflow-hidden">
             <NuxtLink
               href="https://cdn77.com"

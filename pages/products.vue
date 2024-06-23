@@ -1,11 +1,11 @@
 <template>
-  <section class="text-gray-600 body-font dark:text-gray-400">
-    <div class="container px-5 pt-24 mx-auto">
+  <section class="body-font">
+    <div class="container px-5 pt-12 mx-auto">
       <div class="flex flex-col text-center w-full mb-14">
-        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
+        <h1 class="text-3xl font-medium mb-4">
           Install Media
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-700 dark:text-gray-400">
           Live ISOs with the latest software are regularly released. A new Manjaro system can be installed easily from these.
         </p>
       </div>
@@ -32,10 +32,10 @@
                 x86 Architecture
               </p>
             </div>
-            <h5 class="mb-3 text-3xl font-bold leading-none sm:text-4xl">
+            <h5 class="mb-3 text-3xl font-bold leading-none">
               For Workstations and Laptops
             </h5>
-            <p class="mb-5 text-gray-800 dark:text-gray-500">
+            <p class="mb-5 text-gray-700 dark:text-gray-400">
               The standard version of Manjaro. This image is suitable for most personal computers.
             </p>
             <div class="flex items-center">
@@ -61,7 +61,7 @@
             <h5 class="mb-3 text-xl font-bold leading-none sm:text-xl">
               For Phones and Embedded
             </h5>
-            <p class="mb-5 text-gray-800 dark:text-gray-500">
+            <p class="mb-5 text-gray-700 dark:text-gray-400">
               For a selection of embedded and mobile devices.
             </p>
             <div class="flex items-center">
@@ -93,10 +93,10 @@
       </div>
 
       <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
+        <h1 class="text-3xl font-medium title-font mb-4">
           Devices
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-700 dark:text-gray-400">
           Our hardware partners offer attractive devices with Manjaro preinstalled.
         </p>
         <NuxtImg

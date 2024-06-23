@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="px-4 pt-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div class="grid gap-12 row-gap-8 lg:grid-cols-2">
         <div class="place-self-center">
           <NuxtImg
@@ -12,7 +12,7 @@
         </div>
         <div class="flex flex-col justify-center">
           <div class="max-w-xl mb-6">
-            <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
+            <h2 class="text-3xl font-medium mb-4">
               Enterprise Services
             </h2>
             <p class="text-base text-gray-700 dark:text-gray-400 md:text-lg">
@@ -102,9 +102,8 @@
             <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-teal-accent-400">
               We Make It Work
             </p>
-            <h2 class="max-w-lg mb-6 font-sans text-2xl font-bold tracking-tight sm:leading-none">
-              Integrate All Your
-              Business Software
+            <h2 class="text-2xl font-medium mb-4">
+              Integrate All Your Business Software
             </h2>
             <div class="text-base text-gray-700 dark:text-gray-300 md:text-lg">
               <p class="pb-3">
@@ -119,12 +118,12 @@
       </div>
     </div>
 
-    <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
+    <div class="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-teal-accent-400">
-          Our Solution
+          Our Solutions
         </p>
-        <h2 class="max-w-lg mb-6 font-sans text-2xl font-bold leading-none tracking-tight md:mx-auto">
+        <h2 class="sm:text-2xl text-2xl font-medium mb-4">
           Types of Services
         </h2>
         <p class="text-base text-gray-700 dark:text-gray-400 md:text-lg">
@@ -237,13 +236,13 @@
 
     <div
       id="contact-us"
-      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:py-10"
+      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:pt-24"
     >
-      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl">
+      <div class="max-w-xl mb-6 md:mx-auto sm:text-center lg:max-w-2xl">
         <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-teal-accent-400">
           Contact Us
         </p>
-        <h2 class="max-w-lg mb-6 font-sans text-xl font-bold leading-none tracking-tight sm:text-2xl md:mx-auto">
+        <h2 class="text-2xl font-medium">
           Let Us Find the Right Solution for You
         </h2>
       </div>
