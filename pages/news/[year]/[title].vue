@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-sm mx-auto">
+  <div class="max-w-screen-sm mx-auto px-6">
     <article>
       <div class="py-10">
         <NuxtImg
