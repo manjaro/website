@@ -1,7 +1,7 @@
 <template>
   <section class="text-gray-600 body-font dark:text-gray-400">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
+    <div class="container px-5 pt-12 mx-auto">
+      <div class="flex flex-col text-center w-full mb-16">
         <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
           Core Team
         </h1>
@@ -90,12 +90,10 @@
         </div>
       </div>
     </div>
-    <div>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-center pb-10">
-        <NuxtLink href="/team/former">
-          Former team members
-        </NuxtLink>
-      </p>
+    <div class="lg:w-2/3 mx-auto leading-relaxed text-base text-center pt-20">
+      <NuxtLink href="/team/former">
+        Former team members
+      </NuxtLink>
     </div>
   </section>
 </template>

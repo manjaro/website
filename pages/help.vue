@@ -1,14 +1,14 @@
 <template>
   <section class="body-font">
-    <div class="container px-5 py-24 mx-auto">
+    <div class="container px-5 pt-12 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
         <h2 class="text-xs text-primary tracking-widest font-medium title-font mb-1">
           Help Resources
         </h2>
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 dark:text-white">
+        <h1 class="text-3xl font-medium title-font mb-4">
           Get Help for Your Manjaro Install
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700 dark:text-gray-400">
           We offer various free means to solve problems and professional support.
         </p>
       </div>
@@ -21,10 +21,10 @@
               width="300px"
             />
           </div>
-          <h2 class="text-lg sm:text-xl dark:text-white font-medium title-font mb-2">
+          <h2 class="text-lg sm:text-xl font-medium title-font mb-2">
             Documentation
           </h2>
-          <p class="leading-relaxed text-base mb-4">
+          <p class="leading-relaxed text-base mb-4 text-gray-700 dark:text-gray-300">
             Browse our documentation to get started with Manjaro or read up on advanced topics.
           </p>
           <NuxtLink
@@ -53,10 +53,10 @@
               width="300px"
             />
           </div>
-          <h2 class="text-lg sm:text-xl dark:text-white font-medium title-font mb-2">
+          <h2 class="text-lg sm:text-xl font-medium title-font mb-2">
             Forum
           </h2>
-          <p class="leading-relaxed text-base mb-4">
+          <p class="leading-relaxed text-base mb-4 text-gray-700 dark:text-gray-300">
             The official Manjaro Forum is a longstanding institution for user-to-user help.
           </p>
           <NuxtLink
@@ -85,10 +85,10 @@
               width="300px"
             />
           </div>
-          <h2 class="text-lg sm:text-xl dark:text-white font-medium title-font mb-2">
+          <h2 class="text-lg sm:text-xl font-medium title-font mb-2">
             Arch Wiki
           </h2>
-          <p class="leading-relaxed text-base mb-4">
+          <p class="leading-relaxed text-base mb-4 text-gray-700 dark:text-gray-300">
             This Wiki is a formidable resource for learning about the Arch based Manjaro too.
           </p>
           <NuxtLink
@@ -116,10 +116,10 @@
               width="300px"
             />
           </div>
-          <h2 class="text-lg sm:text-xl dark:text-white font-medium title-font mb-2">
+          <h2 class="text-lg sm:text-xl font-medium title-font mb-2">
             Professional Support
           </h2>
-          <p class="leading-relaxed text-base mb-4">
+          <p class="leading-relaxed text-base mb-4 text-gray-700 dark:text-gray-300">
             The Manjaro company offers reliable professional support for businesses and public institutions.
           </p>
           <NuxtLink

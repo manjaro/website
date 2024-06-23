@@ -1,6 +1,6 @@
 <template>
   <section class="text-gray-600 body-font dark:text-gray-400">
-    <div class="container px-5 pt-24 mx-auto">
+    <div class="container px-5 pt-16 mx-auto">
       <div class="flex flex-col text-center w-full mb-14">
         <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
           Official x86 Images
@@ -48,14 +48,12 @@
       </div>
     </div>
 
-    <div class="container px-5 pt-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-14">
-        <NuxtLink href="/download-arm">
-          <p class="lg:w-2/3 mx-auto leading-relaxed">
-            Click here for ARM images
-          </p>
-        </NuxtLink>
-      </div>
+    <div class="container px-5 pt-20 mx-auto flex w-full mb-12 justify-center">
+      <NuxtLink href="/download-arm">
+        <div class="btn btn-ghost leading-relaxed font-normal tracking-wider">
+          Click here for ARM images
+        </div>
+      </NuxtLink>
     </div>
   </section>
 </template>

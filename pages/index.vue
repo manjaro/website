@@ -19,9 +19,7 @@
             </p>
             <div class="flex flex-wrap gap-y-4 gap-x-8 mt-8">
               <NuxtLink href="/download">
-                <button
-                  class="btn lg:btn-lg flex gap-5"
-                >
+                <button class="btn lg:btn-lg flex gap-5">
                   <div>Download</div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +50,7 @@
           />
         </div>
         <div>
-          <h2 class="md:text-4xl text-3xl font-semibold mb-6">
+          <h2 class="text-2xl lg:text-3xl font-semibold mb-6">
             Robust with Rolling Releases
           </h2>
           <p class="pb-2">
@@ -68,18 +66,18 @@
     </div>
 
     <div class="px-4 sm:px-10 mt-14 md:mt-28">
-      <div class="max-w-7xl w-full mx-auto grid md:grid-cols-2 gap-10 place-items-center">
-        <div class="w-full h-full">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 place-items-center">
+        <div>
           <NuxtImg
             src="company.webp"
             alt="Skyscrapers"
             height="500px"
-            class="w-full h-full object-cover"
+            class="object-contain"
           />
         </div>
         <div>
-          <div class="text-background">
-            <h2 class="md:text-4xl text-3xl font-semibold mb-6">
+          <div>
+            <h2 class="text-2xl lg:text-3xl font-semibold mb-6">
               Enterprise Grade
             </h2>
             <p>
@@ -87,9 +85,7 @@
             </p>
           </div>
           <NuxtLink href="/enterprise">
-            <button
-              class="flex items-center px-5 py-4 mt-8 btn"
-            >
+            <button class="flex items-center px-5 py-4 mt-8 btn">
               Learn More
             </button>
           </NuxtLink>

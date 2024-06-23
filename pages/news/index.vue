@@ -1,11 +1,11 @@
 <template>
   <section>
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="py-12 px-4 mx-auto max-w-screen-xl lg:px-6 body-font">
       <div class="flex flex-col text-center w-full mb-14">
-        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
+        <h1 class="text-3xl font-medium mb-4">
           News and Announcements
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-700 dark:text-gray-400">
           Articles about development and organization of the Manjaro project
         </p>
       </div>
@@ -15,7 +15,7 @@
           :key="item.id"
           class="p-5"
         >
-          <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <article class="p-6 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
             <div class="flex justify-between items-center mb-5 text-gray-500">
               <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800 capitalize">
                 <svg
@@ -39,12 +39,12 @@
                   width="500"
                 /></NuxtLink>
             </div>
-            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200">
               <NuxtLink :href="item._path">
                 {{ item.title }}
               </NuxtLink>
             </h2>
-            <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+            <p class="mb-5 text-gray-700 dark:text-gray-300">
               {{ item.description }}
             </p>
             <div class="flex justify-between items-center">
@@ -54,7 +54,7 @@
                   :src="'/team/' + getAuthors(item.authors)[0].id + '.' + getAuthors(item.authors)[0].image"
                   alt="Jese Leos avatar"
                 >
-                <span class="font-medium dark:text-white">
+                <span class="font-medium">
                   {{ getAuthors(item.authors)[0].name }}
                 </span>
               </div>
