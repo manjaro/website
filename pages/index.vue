@@ -2,8 +2,8 @@
   <div>
     <div class="lg:min-h-[520px] bg-primary px-4 flex">
       <div class="px-4 sm:px-10 max-w-7xl mx-auto py-12 text-white place-self-center">
-        <div class="grid lg:grid-cols-2 justify-center items-center gap-14">
-          <div class="max-lg:mt-12 h-full place-self-center lg:order-last">
+        <div class="grid md:grid-cols-2 justify-center items-center gap-y-10 gap-x-14">
+          <div class="max-lg:mt-8 h-full place-self-center md:order-last">
             <NuxtImg
               src="desktops.webp"
               alt="Gnome, KDE desktops"
@@ -11,9 +11,8 @@
             />
           </div>
           <div>
-            <h1 class="md:text-5xl text-4xl font-bold mb-6 md:!leading-[55px]">
-              Manjaro Linux Empowering People and
-              Organizations
+            <h1 class="text-3xl lg:text-4xl font-bold mb-6 sm:mb-3 lg:mb-6 !leading-[45px] lg:!leading-[55px] sm:font-s">
+              Manjaro Linux Empowering People and Organizations
             </h1>
             <p class="text-base leading-relaxed tracking-wider">
               Taking the raw power and flexibility of Arch Linux and making it more accessible for a greater audience.
@@ -21,7 +20,7 @@
             <div class="flex flex-wrap gap-y-4 gap-x-8 mt-8">
               <NuxtLink href="/download">
                 <button
-                  class="btn btn-lg flex gap-5"
+                  class="btn lg:btn-lg flex gap-5"
                 >
                   <div>Download</div>
                   <svg
