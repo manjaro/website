@@ -95,10 +95,10 @@
                 href="https://cdn77.com"
                 target="_blank"
               >
-                <NuxtImg
-                  height="20px"
+                <img
+                  class="h-4"
                   src="/partners/cdn77.webp"
-                />
+                >
               </NuxtLink>
             </div>
           </div>
