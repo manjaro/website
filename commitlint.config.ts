@@ -29,6 +29,7 @@ module.exports = {
       [
         'build',
         'ci',
+        'content',
         'docs',
         'feat',
         'fix',
