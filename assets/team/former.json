@@ -26,10 +26,10 @@
         "pos": 6
     },
     {
-        "id": "",
+        "id": "danjohn",
         "name": "Dan Johansen",
         "role": "",
-        "image": "",
+        "image": "jpg",
         "description": "Dan was involved in ARM builds and testing.",
         "social": {
             "github": "",
