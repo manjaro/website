@@ -15,7 +15,7 @@
           :key="member.id"
           class="p-4 lg:w-1/2"
         >
-          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center sm:text-left">
             <NuxtImg
               alt="team"
               width="300px"
