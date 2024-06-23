@@ -5,7 +5,7 @@
         <div class="grid lg:grid-cols-2 justify-center items-center gap-14">
           <div class="max-lg:mt-12 h-full place-self-center lg:order-last">
             <NuxtImg
-              src="desktops.png"
+              src="desktops.webp"
               alt="Gnome, KDE desktops"
               width="700px"
             />
@@ -46,8 +46,8 @@
       <div class="max-w-7xl w-full mx-auto grid md:grid-cols-2 gap-10 place-items-center">
         <div class="h-full md:order-last">
           <NuxtImg
-            src="branch.png"
-            alt="feature"
+            src="branch.webp"
+            alt="Manjaro branches"
             width="300px"
             class="h-full"
           />
@@ -72,7 +72,8 @@
       <div class="max-w-7xl w-full mx-auto grid md:grid-cols-2 gap-10 place-items-center">
         <div class="w-full h-full">
           <NuxtImg
-            src="company.jpg"
+            src="company.webp"
+            alt="Skyscrapers"
             height="500px"
             class="w-full h-full object-cover"
           />
