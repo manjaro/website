@@ -45,6 +45,17 @@
         </div>
       </NuxtLink>
     </div>
+    <div class="hidden">
+      <!-- Forces NuxtImg file creation for conditionally rendered cards. -->
+      <NuxtImg
+        :src="'/desktops/phosh.webp'"
+        width="400"
+      />
+      <NuxtImg
+        :src="'/desktops/plasma-mobile.webp'"
+        width="400"
+      />
+    </div>
   </section>
 </template>
 
