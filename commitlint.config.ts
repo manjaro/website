@@ -6,14 +6,7 @@ module.exports = {
     'footer-leading-blank': [2, 'always'],
     'footer-max-line-length': [2, 'always', 90],
     'header-max-length': [2, 'always', 90],
-    'scope-case': [2, 'always', 'lower-case'],
-    'scope-enum': [
-      2,
-      'always',
-      [
-        'content',
-      ],
-    ],
+    'scope-empty': [2, 'always'],
     'subject-case': [
       2,
       'never',
@@ -28,6 +21,7 @@ module.exports = {
       'always',
       [
         'build',
+        'chore',
         'ci',
         'content',
         'docs',

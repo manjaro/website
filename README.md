@@ -53,6 +53,7 @@ Ensure you have permission to include any non-code content that is part of your 
 The [Conventional Commits 1.0.0][conventional-commits] specification is applied with the following
 amendments:
 
+* No scopes are allowed. Allowed commit types [are these](commitlint.config.ts#L23-L34). The "chore" type is allowed, but try to not overuse it. For content updates use the "content" type.
 * Any line of the message must be 90 characters or shorter.
 * Angular's [Revert][angular-revert] and [Subject][angular-subject] policies are applied.
 
