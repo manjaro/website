@@ -50,6 +50,14 @@
     <div class="hidden">
       <!-- Forces NuxtImg file creation for conditionally rendered cards. -->
       <NuxtImg
+        :src="'/desktops/mate.webp'"
+        width="400"
+      />
+      <NuxtImg
+        :src="'/desktops/minimal.webp'"
+        width="400"
+      />
+      <NuxtImg
         :src="'/desktops/phosh.webp'"
         width="400"
       />
