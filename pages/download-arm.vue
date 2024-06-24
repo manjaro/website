@@ -26,15 +26,17 @@
     </div>
     <div class="container mx-auto pb-10 px-5 flex justify-center items-center">
       <div class="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-20">
-        <IsoCard
-          v-for="(iso, title) of isos.arm[selectedDevice]"
-          :key="title"
-          :desktop-id="title"
-          :desktop-data="getDesktopData(title)"
-          :iso-data="iso"
-          :show-details="title == latestDetailCard"
-          @details-toggled="handleDetailsClick"
-        />
+        <ClientOnly fallback-tag="span">
+          <IsoCard
+            v-for="(iso, title) of isos.arm[selectedDevice]"
+            :key="title"
+            :desktop-id="title"
+            :desktop-data="getDesktopData(title)"
+            :iso-data="iso"
+            :show-details="title == latestDetailCard"
+            @details-toggled="handleDetailsClick"
+          />
+        </ClientOnly>
       </div>
     </div>
 
@@ -75,8 +77,37 @@ const getDesktopData = (title: string) => {
   return desktops[title]
 }
 
-const selectedDevice = ref('Generic')
+const route = useRoute()
+const router = useRouter()
+
+const getActiveDevice = () => {
+  if (route.query.device) {
+    for (const device in isos.arm) {
+      if (device === route.query.device) {
+        return device
+      }
+    }
+  }
+
+  return 'Generic'
+}
+
+const selectedDevice = ref(getActiveDevice())
 const latestDetailCard = ref('')
+
+// When the selection changes, update the query.
+watch(selectedDevice, (selectedDevice) => {
+  router.push({
+    path: '/download-arm',
+    query: { device: selectedDevice },
+  })
+})
+
+// When the query changes, update the selection.
+watch(() => route.query.device, (device) => {
+  selectedDevice.value = device
+},
+)
 
 const handleDetailsClick = (title: string, enabled: boolean) => {
   if (enabled) {
