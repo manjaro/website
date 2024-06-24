@@ -25,3 +25,7 @@ You can volunteer for the wiki as documentation writer, to apply as a writer hea
 ### You Want to Volunteer as Something Else We Have Not Covered
 
 Head to the <a href="https://manjaro.org/contact/">contact form</a> and email the Manjaro project.</p>
+
+### Mailing Lists
+These lists are not for communication but used for status reports.
+Still good to know about them. You can find a list of them [here](/mailing-lists).

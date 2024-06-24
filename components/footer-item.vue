@@ -81,10 +81,10 @@
               <ul class="mt-2 space-y-2">
                 <li>
                   <a
-                    href="https://status.manjaro.org"
+                    href="https://repo.manjaro.org/"
                     target="_blank"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Servers</a>
+                  >Mirrors</a>
                 </li>
                 <li>
                   <a
@@ -95,10 +95,10 @@
                 </li>
                 <li>
                   <a
-                    href="/mailing-lists"
+                    href="https://status.manjaro.org"
+                    target="_blank"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Mailing
-                    Lists</a>
+                  >Servers</a>
                 </li>
               </ul>
             </div>
