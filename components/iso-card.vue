@@ -4,12 +4,11 @@
       v-if="!showDetails"
       class="relative"
     >
-      <div class="absolute inset-0 bg-gray-800 z-0" />
       <NuxtImg
         :src="'/desktops/' + desktopId + '.webp'"
         alt="Desktop image"
         width="400"
-        class="relative object-cover h-40 z-1"
+        class="relative object-cover h-40"
       />
     </figure>
     <div
