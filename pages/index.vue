@@ -41,12 +41,11 @@
 
     <div class="px-4 sm:px-10 mt-14 md:mt-20">
       <div class="max-w-7xl w-full mx-auto grid md:grid-cols-2 gap-10 place-items-center">
-        <div class="h-full md:order-last">
+        <div class="md:order-last">
           <NuxtImg
             src="branch.webp"
             alt="Manjaro branches"
-            width="300px"
-            class="h-full"
+            width="550px"
           />
         </div>
         <div>
