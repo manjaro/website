@@ -1,7 +1,7 @@
 <template>
-  <section class="body-font">
-    <div class="container px-5 pt-12 mx-auto">
-      <div class="flex flex-col text-center w-full mb-14">
+  <section class="max-w-screen-xl mx-auto">
+    <div class="container pt-12 mx-auto px-6 xl:px-12">
+      <div class="flex flex-col text-center mb-14">
         <h1 class="text-3xl font-medium mb-4">
           Install Media
         </h1>
@@ -9,8 +9,8 @@
           Live ISOs with the latest software are regularly released. A new Manjaro system can be installed easily from these.
         </p>
       </div>
-      <div class="px-4 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-14">
-        <div class="flex flex-col max-w-screen-lg overflow-hidden border dark:border-2 dark:border-gray-800 rounded shadow-sm lg:flex-row sm:mx-auto">
+      <div class="pb-8 mx-auto lg:pb-14">
+        <div class="flex flex-col overflow-hidden border dark:border-2 dark:border-gray-800 rounded shadow-sm lg:flex-row">
           <div class="relative lg:w-1/2">
             <NuxtImg
               src="/x86.webp"
@@ -20,10 +20,10 @@
             />
             <svg
               class="absolute top-0 right-0 hidden h-full text-bgbright dark:text-bgdark lg:inline-block"
-              viewBox="0 0 19.7 103"
+              viewBox="0 0 20 110"
               fill="currentColor"
             >
-              <polygon points="17,0 20,0 20,104 1,104" />
+              <polygon points="17,0 21,0 22,112 1,112" />
             </svg>
           </div>
           <div class="flex flex-col justify-center p-8 lg:p-16 lg:pl-10 lg:w-1/2">
@@ -50,15 +50,15 @@
           </div>
         </div>
       </div>
-      <div class="px-4 pb-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-20">
-        <div class="flex flex-row max-w-screen-lg overflow-hidden border dark:border-2 dark:border-gray-800 rounded shadow-sm lg:flex-row sm:mx-auto">
+      <div class="pb-8 mx-auto lg:pb-14">
+        <div class="flex flex-row overflow-hidden border dark:border-2 dark:border-gray-800 rounded shadow-sm">
           <div class="flex flex-col justify-center p-8 lg:p-6 lg:pl-10 lg:w-1/2">
             <div>
               <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-accent uppercase rounded-full bg-teal-accent-400">
                 ARM Architecture
               </p>
             </div>
-            <h5 class="mb-3 text-xl font-bold leading-none sm:text-xl">
+            <h5 class="mb-2 text-xl font-bold leading-none sm:text-xl">
               For Phones and Embedded
             </h5>
             <p class="mb-5 text-gray-700 dark:text-gray-400">
@@ -74,13 +74,15 @@
               </NuxtLink>
             </div>
           </div>
-          <div class="justify-center lg:w-1/2 grayscale">
-            <NuxtImg
-              src="/arm.webp"
-              alt=""
-              width="500"
-              class="object-cover w-full lg:h-56 sm:h-64"
-            />
+          <div class="relative justify-center w-1/2 grayscale place-items-center">
+            <div class="flex w-full h-full absolute">
+              <NuxtImg
+                src="/arm.webp"
+                alt=""
+                width="500"
+                class="object-cover w-full"
+              />
+            </div>
             <svg
               class="absolute top-0 left-0 hidden h-full text-bgbright dark:text-bgdark lg:inline-block"
               viewBox="0 0 20 104"
@@ -91,8 +93,7 @@
           </div>
         </div>
       </div>
-
-      <div class="flex flex-col text-center w-full mb-20">
+      <div class="flex flex-col text-center w-full my-10">
         <h1 class="text-3xl font-medium title-font mb-4">
           Devices
         </h1>
