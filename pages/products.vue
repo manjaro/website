@@ -20,7 +20,7 @@
             />
             <svg
               class="absolute top-0 right-0 hidden h-full text-bgbright dark:text-bgdark lg:inline-block"
-              viewBox="0 0 19.7 104"
+              viewBox="0 0 19.7 103"
               fill="currentColor"
             >
               <polygon points="17,0 20,0 20,104 1,104" />
