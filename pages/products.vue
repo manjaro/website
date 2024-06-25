@@ -93,19 +93,65 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col text-center w-full my-10">
-        <h1 class="text-3xl font-medium title-font mb-4">
+    </div>
+    <div class="container pt-12 mx-auto px-6 xl:px-12">
+      <div class="flex flex-col text-center mb-14">
+        <h1 class="text-3xl font-medium mb-4">
           Devices
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-700 dark:text-gray-400">
           Our hardware partners offer attractive devices with Manjaro preinstalled.
         </p>
-        <NuxtImg
-          src="/construction.png"
-          alt=""
-          width="200"
-          class="object-contain h-52 pt-8 grayscale place-self-center"
-        />
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-8 mx-auto lg:pb-14 gap-10">
+        <div
+          v-for="device in devices"
+          :key="device"
+          class="relative w-full md:w-auto flex flex-col place-content-start border dark:border-2 dark:border-gray-800 rounded shadow-sm sm:mx-auto p-8"
+        >
+          <div
+            v-if="device.coming"
+            class="absolute right-0 top-0 text-warning dark:text-yellow-600 border-l-2 border-b-2 bg-gray-50 border-gray-200 dark:bg-gray-900 dark:border-gray-950 font-semibold tracking-wider uppercase p-2"
+          >
+            Coming Soon
+          </div>
+          <div class="self-center">
+            <NuxtImg
+              :src="`/products/devices/${device._path?.split('/').pop()}.webp`"
+              alt=""
+              width="500"
+              class="object-contain h-52"
+            />
+          </div>
+          <div class="flex flex-col pt-12 flex-grow">
+            <div>
+              <p class="inline-block px-3 mb-3 text-xs font-semibold tracking-wider text-accent uppercase rounded-full bg-teal-accent-400">
+                {{ device.make }}
+              </p>
+            </div>
+            <h5 class="mb-6 text-3xl font-bold leading-none">
+              {{ device.name }}
+            </h5>
+            <div class="flex-grow self-stretch">
+              <p class="mb-6 text-gray-700 dark:text-gray-400">
+                <ContentRenderer
+                  class="prose text-[15px]"
+                  :value="device"
+                />
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <NuxtLink
+              :href="device.url"
+              target="_blank"
+              aria-label=""
+              class="btn btn-primary"
+            >
+              More Info
+            </NuxtLink>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -115,4 +161,7 @@
 useHead({
   title: 'Products' + ' – manjaro.org',
 })
+
+const { data: devices } = await useAsyncData('/products/devices',
+  () => queryContent('/products/devices').sort({ pos: 1 }).find())
 </script>
