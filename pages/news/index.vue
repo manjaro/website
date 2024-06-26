@@ -50,8 +50,9 @@
           <div class="flex justify-between">
             <div class="flex items-center space-x-4">
               <img
+                v-if="getAuthorPicture(item.authors[0])"
                 class="w-7 h-7 rounded-full"
-                :src="'/team/' + getAuthors(item.authors)[0].id + '.' + getAuthors(item.authors)[0].image"
+                :src="getAuthorPicture(item.authors[0])"
                 alt="Author portrait"
               >
               <span class="font-medium">
@@ -83,11 +84,44 @@
 
 <script setup lang="ts">
 import { useTimeAgo } from '@vueuse/core'
-import team from '~/assets/team/current.json'
+import current_team from '~/assets/team/current.json'
+import former_team from '~/assets/team/former.json'
+
+const getAuthorPicture = (user_id: string): string | null => {
+  for (const author of current_team) {
+    if (user_id == author.id) {
+      if (author.image) {
+        return '/team/' + user_id + '.' + author.image
+      }
+      return null
+    }
+  }
+  for (const author of former_team) {
+    if (user_id == author.id) {
+      if (author.image) {
+        return '/team/' + user_id + '.' + author.image
+      }
+      return null
+    }
+  }
+  return null
+}
 
 const getAuthors = (ids) => {
-  const ret = team.filter(obj => obj.id == ids[0])
-  return ret
+  const authors = []
+
+  for (const author of current_team) {
+    if (ids.includes(author.id)) {
+      authors.push(author)
+    }
+  }
+  for (const author of former_team) {
+    if (ids.includes(author.id)) {
+      authors.push(author)
+    }
+  }
+
+  return authors
 }
 
 useHead({
