@@ -9,11 +9,11 @@
           Articles about development and organization of the Manjaro project
         </p>
       </div>
-      <div class="flex flex-wrap gap-12 justify-center px-4">
+      <div class="grid grid-cols-2 gap-10 px-8">
         <div
           v-for="item of data"
           :key="item.id"
-          class="flex flex-col w-[550px] place-content-start p-6 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+          class="flex flex-col p-6 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
         >
           <div class="flex justify-between items-center mb-5 text-gray-500">
             <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800 capitalize">
@@ -31,19 +31,15 @@
             </span>
             <span class="text-sm">{{ useTimeAgo(item.date).value }}</span>
           </div>
-          <NuxtLink
-            :href="item._path"
-            class="pb-5"
-          >
-            <div>
+          <div class="pb-5 h-[340px]">
+            <NuxtLink :href="item._path">
               <NuxtImg
                 :src="getImagePath(item._path!, item.image!)"
                 width="600"
-                class="object-contain w-full"
               />
-            </div>
-          </NuxtLink>
-          <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200">
+            </NuxtLink>
+          </div>
+          <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             <NuxtLink :href="item._path">
               {{ item.title }}
             </NuxtLink>
