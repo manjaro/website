@@ -21,9 +21,11 @@
         </div>
       </div>
     </div>
-    <div class="lg:w-2/3 mx-auto leading-relaxed text-base text-center pt-20">
+    <div class="container px-5 pt-20 mx-auto flex w-full mb-12 justify-center">
       <NuxtLink href="/team">
-        Current team members
+        <div class="btn btn-ghost leading-relaxed font-normal tracking-wider">
+          Current team members
+        </div>
       </NuxtLink>
     </div>
   </section>
