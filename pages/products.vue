@@ -107,7 +107,7 @@
         <div
           v-for="device in devices"
           :key="device"
-          class="relative w-full md:w-auto flex flex-col place-content-start border dark:border-2 dark:border-gray-800 rounded shadow-sm sm:mx-auto p-8"
+          class="relative w-full md:w-auto flex flex-col place-content-start border dark:border-2 dark:border-gray-800 rounded shadow-sm sm:mx-auto p-8 dark:bg-gray-900"
         >
           <div
             v-if="device.coming"
