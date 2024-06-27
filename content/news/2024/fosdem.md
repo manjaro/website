@@ -7,7 +7,7 @@ image: header.png
 description: "Meet With Us In Brussels"
 authors: [philm]
 ---
-<b>Hello Community,</b>
+**Hello Community,**
 
 some of our team will attend FOSDEM 2024 in Brussels. You can meet us in person on the weekend of 3 & 4 February 2024 at ULB Campus du Solbosch. We bring some Manjaro stickers and gaming gear to test. It will be a great opportunity to talk about future plans and direction of the Manjaro project, to share our passion with like-minded individuals and get first hand infos about upcoming devices powered by Manjaro Linux!
 
