@@ -1,5 +1,5 @@
 ---
-title: "Manjaro Company Management Change"
+title: "Company Management Change"
 draft: true
 date: 2024-04-04 12:00:00
 kind: article
