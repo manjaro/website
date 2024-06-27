@@ -1,5 +1,5 @@
 ---
-title: "New Features In Pamac"
+title: "New Features in Pamac"
 draft: true
 date: 2023-04-20 12:00:00
 kind: article

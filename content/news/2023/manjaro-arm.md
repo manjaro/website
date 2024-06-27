@@ -1,5 +1,5 @@
 ---
-title: "February 2023 In Manjaro ARM"
+title: "February 2023 in Manjaro ARM"
 draft: true
 date: 2023-02-26 12:00:00
 kind: article

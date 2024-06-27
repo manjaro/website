@@ -1,5 +1,5 @@
 ---
-title: "We Will Be At FOSDEM 2024"
+title: "We Will Be at FOSDEM 2024"
 draft: true
 date: 2024-01-17 12:00:00
 kind: article
