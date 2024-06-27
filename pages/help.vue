@@ -1,7 +1,7 @@
 <template>
   <section class="body-font">
-    <div class="container px-5 pt-12 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
+    <div class="px-4 pt-8 mx-auto md:max-w-full lg:max-w-screen-xl">
+      <div class="flex flex-col text-center w-full mb-12">
         <h2 class="text-xs text-primary tracking-widest font-medium title-font mb-1">
           Help Resources
         </h2>
@@ -12,7 +12,7 @@
           We offer various free means to solve problems and professional support.
         </p>
       </div>
-      <div class="flex flex-wrap">
+      <div class="mx-auto flex flex-wrap max-w-[1200px] xl:max-w-max xl:px-4">
         <div class="flex flex-col xl:w-1/4 md:w-1/2 px-8 py-6">
           <div class="p-4 w-60 mb-6 self-center">
             <NuxtImg
@@ -120,7 +120,7 @@
             Professional Support
           </h2>
           <p class="leading-relaxed text-base mb-4 text-gray-700 dark:text-gray-300">
-            The Manjaro company offers reliable professional support for businesses and public institutions.
+            The Manjaro company offers reliable professional support for businesses.
           </p>
           <NuxtLink
             href="/enterprise"
