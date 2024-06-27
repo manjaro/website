@@ -13,20 +13,63 @@
     <p class="mb-5 text-gray-800 dark:text-gray-300">
       {{ data!.description }}
     </p>
-    <div class="pb-2 flex items-center text-gray-500">
-      {{ useDateFormat(data!.date, 'MMMM DD, YYYY').value }}, by
-      <NuxtImg
-        v-if="authorPicture"
-        class="mx-2 w-9 h-9 rounded-full object-cover"
-        :src="authorPicture"
-        width="50px"
-        alt="Author portrait"
-      />
-      {{ author.name }}
+    <div class="pb-2 flex flex-row items-center text-gray-500">
+      {{ useDateFormat(data!.date, 'MMMM DD, YYYY').value }}, by&nbsp;
+      <span
+        class="flex items-center cursor-pointer"
+        onclick="author_modal.showModal()"
+      >
+        <NuxtImg
+          v-if="authorPicture"
+          class="mx-2 w-9 h-9 rounded-full object-cover"
+          :src="authorPicture"
+          width="50px"
+          alt="Author portrait"
+        />
+        {{ author.name }}
+      </span>
     </div>
     <section class="text-gray-900 dark:text-gray-200 prose dark:prose-invert">
       <ContentRenderer :value="data" />
     </section>
+    <dialog
+      id="author_modal"
+      class="modal"
+    >
+      <div class="modal-box relative">
+        <div class="flex items-center gap-10">
+          <NuxtImg
+            v-if="authorPicture"
+            class="rounded-full object-cover"
+            :src="authorPicture"
+            width="150px"
+            alt="Author portrait"
+          />
+          <div>
+            <h3 class="text-lg font-bold">
+              {{ author.name }}
+            </h3>
+            <p class="pt-1 pb-3 capitalize text-gray-500 dark:text-gray-400 tracking-wide">
+              {{ author.role }}
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-300">
+              {{ author.description }}
+            </p>
+          </div>
+        </div>
+        <form method="dialog">
+          <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+            ✕
+          </button>
+        </form>
+      </div>
+      <form
+        method="dialog"
+        class="modal-backdrop"
+      >
+        <button>close</button>
+      </form>
+    </dialog>
   </article>
 </template>
 
