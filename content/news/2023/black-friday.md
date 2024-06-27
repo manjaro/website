@@ -7,7 +7,7 @@ image: header.png
 description: "Support The Project"
 authors: [philm]
 ---
-Hello community,
+**Hello community,**
 
 with Manjaro we have a great operating system suitable for a lot of devices. Most of you might install it on already owned hardware or keep older gear up and running when the original OS it was shipped doesn't offer updates anymore.
 
