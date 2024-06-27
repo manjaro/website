@@ -84,45 +84,6 @@
 
 <script setup lang="ts">
 import { useTimeAgo } from '@vueuse/core'
-import current_team from '~/assets/team/current.json'
-import former_team from '~/assets/team/former.json'
-
-const getAuthorPicture = (user_id: string): string | null => {
-  for (const author of current_team) {
-    if (user_id == author.id) {
-      if (author.image) {
-        return '/team/' + user_id + '.' + author.image
-      }
-      return null
-    }
-  }
-  for (const author of former_team) {
-    if (user_id == author.id) {
-      if (author.image) {
-        return '/team/' + user_id + '.' + author.image
-      }
-      return null
-    }
-  }
-  return null
-}
-
-const getAuthors = (ids) => {
-  const authors = []
-
-  for (const author of current_team) {
-    if (ids.includes(author.id)) {
-      authors.push(author)
-    }
-  }
-  for (const author of former_team) {
-    if (ids.includes(author.id)) {
-      authors.push(author)
-    }
-  }
-
-  return authors
-}
 
 useHead({
   title: 'News' + ' – manjaro.org',
