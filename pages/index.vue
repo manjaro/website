@@ -18,7 +18,7 @@
               Taking the raw power and flexibility of Arch Linux and making it more accessible for a greater audience.
             </p>
             <div class="flex flex-wrap gap-y-4 gap-x-8 mt-8">
-              <NuxtLink href="/download">
+              <NuxtLink href="/products/download">
                 <button class="btn lg:btn-lg flex gap-5">
                   <div>Download</div>
                   <svg
