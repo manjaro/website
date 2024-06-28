@@ -49,7 +49,7 @@
     </div>
 
     <div class="container px-5 pt-20 mx-auto flex w-full mb-12 justify-center">
-      <NuxtLink href="/download-arm">
+      <NuxtLink href="/products/download-arm">
         <div class="btn btn-ghost leading-relaxed font-normal tracking-wider">
           Click here for ARM images
         </div>
