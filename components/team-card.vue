@@ -6,7 +6,7 @@
       class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
       :src="getPicture(member.id, member.image)"
     />
-    <div class="flex-grow sm:pl-8">
+    <div class="flex-grow sm:pl-8 min-h-32">
       <h2 class="title-font font-medium text-lg text-gray-900 dark:text-gray-200">
         {{ member.name }}
       </h2>

@@ -45,7 +45,7 @@
             width="150px"
             alt="Author portrait"
           />
-          <div>
+          <div class="min-h-28">
             <h3 class="text-lg font-bold">
               {{ author.name }}
             </h3>
