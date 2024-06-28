@@ -3,6 +3,7 @@
     <NuxtLink
       v-if="member.social.x"
       :href="member.social.x"
+      target="_blank"
       class="text-gray-500 h-[18px] w-[18px]"
     >
       <svg
@@ -19,6 +20,7 @@
     <NuxtLink
       v-if="member.social.github"
       :href="member.social.github"
+      target="_blank"
       class="ml-2 text-gray-500 h-5 w-5"
     >
       <svg
@@ -35,6 +37,7 @@
     <NuxtLink
       v-if="member.social.forum"
       :href="member.social.forum"
+      target="_blank"
       class="ml-2 text-gray-500 h-[22px] w-[22px]"
     >
       <svg
