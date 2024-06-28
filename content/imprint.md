@@ -11,7 +11,7 @@ Country: Germany
 
 Company Type: limited partnership with a limited liability company as general partner<br>
 Commercial register: Registering Court Berlin (Charlottenburg); HRA 62804<br>
-Liable associate: Manjaro Verwaltungs-GmbH, Registering Court Munich; HRB 250879<br>
+Liable associate: Manjaro Verwaltungs-GmbH, Registering Court Berlin (Charlottenburg); HRB 263833<br>
 Managing board: Philip Müller &amp; Roman Gilg<br>
 Email: [Direct contact](mailto:management@manjaro.org)<br>
 VAT-Id.: DE 326352217
