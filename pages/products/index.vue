@@ -10,7 +10,7 @@
         </p>
       </div>
       <div class="pb-8 mx-auto lg:pb-14">
-        <div class="flex flex-col overflow-hidden border dark:border-2 dark:border-gray-800 rounded shadow-sm lg:flex-row">
+        <div class="flex flex-col overflow-hidden border dark:border-gray-800 dark:bg-gray-900 rounded shadow-sm lg:flex-row">
           <div class="relative lg:w-1/2">
             <NuxtImg
               src="/x86.webp"
@@ -19,7 +19,7 @@
               class="object-cover w-full lg:absolute h-80 lg:h-full"
             />
             <svg
-              class="absolute top-0 right-0 hidden h-full text-bgbright dark:text-bgdark lg:inline-block"
+              class="absolute top-0 right-0 hidden h-full text-bgbright dark:text-gray-900 lg:inline-block"
               viewBox="0 0 20 110"
               fill="currentColor"
             >
@@ -28,7 +28,7 @@
           </div>
           <div class="flex flex-col justify-center p-8 lg:p-16 lg:pl-10 lg:w-1/2">
             <div>
-              <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-accent uppercase rounded-full bg-teal-accent-400">
+              <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-accent uppercase rounded-full">
                 x86 Architecture
               </p>
             </div>
@@ -51,10 +51,10 @@
         </div>
       </div>
       <div class="pb-8 mx-auto lg:pb-14">
-        <div class="flex flex-row overflow-hidden border dark:border-2 dark:border-gray-800 rounded shadow-sm">
+        <div class="flex flex-row overflow-hidden border dark:border-gray-800 dark:bg-gray-900 rounded shadow-sm">
           <div class="flex flex-col justify-center p-8 lg:p-6 lg:pl-10 lg:w-1/2">
             <div>
-              <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-accent uppercase rounded-full bg-teal-accent-400">
+              <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-accent uppercase rounded-full">
                 ARM Architecture
               </p>
             </div>
@@ -74,17 +74,17 @@
               </NuxtLink>
             </div>
           </div>
-          <div class="relative justify-center w-1/2 grayscale place-items-center">
+          <div class="relative justify-center w-1/2 place-items-center">
             <div class="flex w-full h-full absolute">
               <NuxtImg
                 src="/arm.webp"
                 alt=""
                 width="500"
-                class="object-cover w-full"
+                class="object-cover w-full grayscale"
               />
             </div>
             <svg
-              class="absolute top-0 left-0 hidden h-full text-bgbright dark:text-bgdark lg:inline-block"
+              class="absolute top-0 left-0 hidden h-full text-bgbright dark:text-gray-900 lg:inline-block"
               viewBox="0 0 20 104"
               fill="currentColor"
             >
@@ -107,7 +107,7 @@
         <div
           v-for="device in devices"
           :key="device"
-          class="relative w-full md:w-auto flex flex-col place-content-start border dark:border-2 dark:border-gray-800 rounded shadow-sm sm:mx-auto p-8 dark:bg-gray-900"
+          class="relative w-full md:w-auto flex flex-col place-content-start border dark:border-gray-800 rounded shadow-sm sm:mx-auto p-8 dark:bg-gray-900"
         >
           <div
             v-if="device.coming"
