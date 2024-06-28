@@ -17,6 +17,7 @@
         {{ member.description }}
       </p>
       <TeamSocial
+        v-if="member.social.x || member.social.github || member.social.forum"
         class="mt-4"
         :member="member"
       />

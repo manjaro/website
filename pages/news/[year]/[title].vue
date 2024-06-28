@@ -56,6 +56,7 @@
               {{ author.description }}
             </p>
             <TeamSocial
+              v-if="author.social.x || author.social.github || author.social.forum"
               class="pt-4"
               :member="author"
             />
