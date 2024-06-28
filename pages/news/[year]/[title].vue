@@ -55,6 +55,10 @@
             <p class="text-sm text-gray-600 dark:text-gray-300">
               {{ author.description }}
             </p>
+            <TeamSocial
+              class="pt-4"
+              :member="author"
+            />
           </div>
         </div>
         <form method="dialog">
