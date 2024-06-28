@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-background border-gray-200 dark:bg-gray-900">
+  <nav class="dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <NuxtLink
         href="/"
@@ -45,6 +45,8 @@
             <li>
               <NuxtLink
                 href="/products"
+                :class="getDropdownLinkStyle('products')"
+                :aria-current="getAriaCurrent('products')"
                 @click="hideDropDownMenu"
               >
                 Products
@@ -53,6 +55,8 @@
             <li>
               <NuxtLink
                 href="/enterprise"
+                :class="getDropdownLinkStyle('enterprise')"
+                :aria-current="getAriaCurrent('enterprise')"
                 @click="hideDropDownMenu"
               >
                 Enterprise
@@ -61,6 +65,8 @@
             <li>
               <NuxtLink
                 href="/help"
+                :class="getDropdownLinkStyle('help')"
+                :aria-current="getAriaCurrent('help')"
                 @click="hideDropDownMenu"
               >
                 Help
@@ -69,6 +75,8 @@
             <li>
               <NuxtLink
                 href="/news"
+                :class="getDropdownLinkStyle('news')"
+                :aria-current="getAriaCurrent('news')"
                 @click="hideDropDownMenu"
               >
                 News
@@ -109,38 +117,44 @@
       </details>
 
       <div
-        id="navbar-default"
         class="hidden w-full md:w-auto md:flex"
       >
-        <div class="flex gap-8 items-center">
+        <div class="flex gap-6 items-center">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            class="font-medium flex flex-col md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
           >
             <li>
               <NuxtLink
                 href="/products"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                aria-current="page"
+                class="px-2"
+                :class="getLinkStyle('products')"
+                :aria-current="getAriaCurrent('products')"
               >Products</NuxtLink>
             </li>
             <li>
               <NuxtLink
                 href="/enterprise"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="px-2"
+                :class="getLinkStyle('enterprise')"
+                :aria-current="getAriaCurrent('enterprise')"
               >
                 Enterprise</NuxtLink>
             </li>
             <li>
               <NuxtLink
                 href="/help"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="px-2"
+                :class="getLinkStyle('help')"
+                :aria-current="getAriaCurrent('help')"
               >
                 Help</NuxtLink>
             </li>
             <li>
               <NuxtLink
                 href="/news"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="px-2"
+                :class="getLinkStyle('news')"
+                :aria-current="getAriaCurrent('news')"
               >
                 News</NuxtLink>
             </li>
@@ -210,4 +224,34 @@ onMounted(() => {
   window.addEventListener('scroll', onScroll)
   window.addEventListener('click', onClick)
 })
+
+const getLinkStyle = (name: string) => {
+  const path = useRoute().name.split('-')
+  let ret = 'hover:text-accent dark:hover:text-accent'
+  if (path[0] == name) {
+    if (path.length == 1) {
+      ret = 'cursor-default'
+    }
+    ret += ' relative after:absolute after:w-4/6 after:h-[2.7px] after:left-0 after:right-0 after:-bottom-1 after:mx-auto after:bg-accent-800 dark:after:bg-accent-200 after:rounded-full'
+  }
+  return ret
+}
+const getDropdownLinkStyle = (name: string) => {
+  const path = useRoute().name.split('-')
+  let ret = ''
+  if (path[0] == name) {
+    if (path.length == 1) {
+      ret = 'btn-disabled'
+    }
+    ret += ' text-accent-300 font-semibold dark:text-accent'
+  }
+  return ret
+}
+const getAriaCurrent = (name: string) => {
+  const path = useRoute().name.split('-')
+  if (path[0] == name && path.length == 1) {
+    return 'page'
+  }
+  return 'false'
+}
 </script>
