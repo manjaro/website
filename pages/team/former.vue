@@ -1,21 +1,23 @@
 <template>
-  <section class="text-gray-600 body-font dark:text-gray-400">
-    <div class="container px-5 pt-12 mx-auto">
-      <div class="flex flex-col text-center w-full mb-16">
-        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
+  <section class="max-w-screen-xl mx-auto">
+    <div class="mx-auto pt-12 px-4">
+      <div class="flex flex-col text-center mb-10">
+        <h1 class="text-3xl font-medium mb-4">
           Former Members
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed">
+        <p class="max-w-[670px] mx-auto leading-relaxed text-gray-700 dark:text-gray-400">
           The following people were part of the Manjaro Team in the past and helped it prosper. We want to thank them a lot for that.
         </p>
       </div>
-      <div class="flex flex-wrap -m-4">
-        <div
-          v-for="member of sortedTeam"
-          :key="member.id"
-          class="p-4 lg:w-1/2"
-        >
-          <TeamCard :member="member" />
+      <div class="mx-auto max-xl:max-w-[850px]">
+        <div class="mx-auto flex flex-wrap">
+          <div
+            v-for="member of sortedTeam"
+            :key="member.id"
+            class="p-4 xl:w-1/2"
+          >
+            <TeamCard :member="member" />
+          </div>
         </div>
       </div>
     </div>
