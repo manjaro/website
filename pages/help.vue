@@ -110,9 +110,9 @@
           </NuxtLink>
         </div>
         <div class="flex flex-col xl:w-1/4 md:w-1/2 px-8 py-6 md:border-l-2 border-gray-200 border-opacity-60">
-          <div class="p-8 w-60 mb-6 self-center">
+          <div class="p-4 w-60 mb-6 self-center">
             <NuxtImg
-              src="logo.svg"
+              src="/help/support.webp"
               width="300px"
             />
           </div>
