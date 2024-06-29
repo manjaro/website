@@ -1,3 +1,5 @@
+import type { NitroConfig } from 'nitropack'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -12,4 +14,22 @@ export default defineNuxtConfig({
     preference: 'system',
     dataValue: 'theme', // for daisyUI
   },
+  hooks: {
+    async 'nitro:config'(nitroConfig) { await setDownloadRedirects(nitroConfig) },
+  },
 })
+
+// Creates redirects for our official downloads. These are needed by GNOME Boxes and other software debepnding on libosinfo.
+// Links are registered at https://gitlab.com/libosinfo/osinfo-db/-/blob/4c64cef/data/os/manjaro.org/manjaro-rolling.xml.in
+const setDownloadRedirects = async (nitroConfig: NitroConfig) => {
+  const rules = nitroConfig!.routeRules
+  const resp = await fetch('https://gitlab.manjaro.org/api/v4/projects/12597/repository/files/file-info.json/raw?ref=master')
+  const isos = await resp.json()
+
+  const add = (desktop: string) => {
+    rules!['/download/' + desktop] = { redirect: { to: isos.official[desktop].image, statusCode: 302 } }
+  }
+  add('gnome')
+  add('plasma')
+  add('xfce')
+}
