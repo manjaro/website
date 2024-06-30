@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/products/download': { redirect: { to: '/products', statusCode: 302 } },
+    '/download': { redirect: { to: '/products', statusCode: 302 } },
   },
   hooks: {
     async 'nitro:config'(nitroConfig) { await setDownloadRedirects(nitroConfig) },
