@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Imprint' + ' – manjaro.org',
+  title: 'Imprint',
 })
 
 const route = useRoute()

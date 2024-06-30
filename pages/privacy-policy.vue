@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Privacy Policy' + ' – manjaro.org',
+  title: 'Privacy Policy',
 })
 
 const route = useRoute()

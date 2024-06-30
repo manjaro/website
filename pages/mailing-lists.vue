@@ -65,6 +65,6 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Mailing Lists' + ' – manjaro.org',
+  title: 'Mailing Lists',
 })
 </script>

@@ -146,6 +146,10 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Help' + ' – manjaro.org',
+  title: 'Help',
+})
+useServerSeoMeta({
+  ogTitle: 'Manjaro Help Resources',
+  description: 'Get help for your Manjaro install through various free resources.',
 })
 </script>

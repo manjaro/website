@@ -105,6 +105,10 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Partners' + ' – manjaro.org',
+  title: 'Partners',
+})
+useServerSeoMeta({
+  ogTitle: 'Manjaro Partners',
+  description: 'Esteemed companies that partnered up and support the Manjaro project.',
 })
 </script>

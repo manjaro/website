@@ -87,7 +87,11 @@
 import { ref } from 'vue'
 
 useHead({
-  title: 'Donate' + ' – manjaro.org',
+  title: 'Donate',
+})
+useServerSeoMeta({
+  ogTitle: 'Donate to Manjaro',
+  description: 'Help the Manjaro project with a financial contribution.',
 })
 
 const arch = defineModel({ type: String, default: 'x86' })

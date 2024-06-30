@@ -93,3 +93,10 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: 'Manjaro – The Linux for People and Organizations',
+  titleTemplate: '',
+})
+</script>

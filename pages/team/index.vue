@@ -35,7 +35,11 @@
 import team from '~/assets/team/current.json'
 
 useHead({
-  title: 'Team' + ' – manjaro.org',
+  title: 'Team',
+})
+useServerSeoMeta({
+  ogTitle: 'The Manjaro Team',
+  description: 'Get to know the people behind Manjaro.',
 })
 
 const sortedTeam = team.sort((a, b) => a.pos - b.pos)

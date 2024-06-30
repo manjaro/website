@@ -263,7 +263,7 @@
           </div>
           <div class="px-6 py-8 border border-t-0 dark:border-gray-700 rounded-b sm:px-8">
             <p class="mb-5">
-              Reach out to discuss your needs and how we can help your buisness to make effective use of Manjaro Linux and other open-source software.
+              Reach out to discuss your needs and how we can help your business to make effective use of Manjaro Linux and other open-source software.
             </p>
             <div class="flex justify-center gap-4">
               <button
@@ -296,6 +296,10 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Enterprise Services' + ' – manjaro.org',
+  title: 'Enterprise Services',
+})
+useServerSeoMeta({
+  ogTitle: 'Manjaro Enterprise Services',
+  description: 'The Manjaro company supports businesses with the setup and management of their Manjaro Linux systems.',
 })
 </script>
