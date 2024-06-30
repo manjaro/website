@@ -2,7 +2,7 @@
   <section class="body-font">
     <div class="px-4 pt-8 mx-auto md:max-w-full lg:max-w-screen-xl">
       <div class="flex flex-col text-center w-full mb-12">
-        <h2 class="text-xs text-primary tracking-widest font-medium title-font mb-1">
+        <h2 class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase">
           Help Resources
         </h2>
         <h1 class="text-3xl font-medium title-font mb-4">

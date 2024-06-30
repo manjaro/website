@@ -99,7 +99,7 @@
         </div>
         <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
           <div class="max-w-xl">
-            <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-teal-accent-400">
+            <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase">
               We Make It Work
             </p>
             <h2 class="text-2xl font-medium mb-4">
@@ -122,7 +122,7 @@
       <div class="bg-slate-100 dark:bg-slate-900">
         <div class="px-4 py-8 lg:py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-teal-accent-400">
+            <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase">
               Our Solutions
             </p>
             <h2 class="text-2xl font-medium mb-4">
@@ -243,7 +243,7 @@
       class="px-4 pb-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24"
     >
       <div class="max-w-xl mb-6 md:mx-auto sm:text-center lg:max-w-2xl">
-        <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-teal-accent-400">
+        <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase">
           Contact Us
         </p>
         <h2 class="text-2xl font-medium">
