@@ -55,24 +55,9 @@ const getImagePath = (path: string, file: string) => {
   return path + '/' + file
 }
 
-const props = defineProps({ pageNumber: { type: Number, required: true } })
-const postsPerPage = 10
-
-const allPostsCountResponse = await useAsyncData('news-items-all',
-  () => queryContent('/news').count())
-
-const allPostsCount = allPostsCountResponse.data.value!
-const totalPages = Math.ceil(allPostsCount / postsPerPage)
-
-if (props.pageNumber < 1 || props.pageNumber > totalPages) {
-  showError({ statusCode: 404, statusMessage: 'Page Not Found', fatal: true })
-}
-
-const { data } = await useAsyncData(`news-items-list-${props.pageNumber}`, () =>
+const { data } = await useAsyncData('news-items-list', () =>
   queryContent('/news')
     .sort({ date: -1 })
-    .skip((props.pageNumber - 1) * postsPerPage)
-    .limit(postsPerPage)
     .find(),
 )
 </script>
