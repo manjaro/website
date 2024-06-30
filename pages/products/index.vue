@@ -40,7 +40,7 @@
             </p>
             <div class="flex items-center">
               <NuxtLink
-                href="products/download"
+                href="/products/download/x86"
                 aria-label=""
                 class="btn btn-primary"
               >
@@ -66,7 +66,7 @@
             </p>
             <div class="flex items-center">
               <NuxtLink
-                href="products/download-arm"
+                href="/products/download/arm"
                 aria-label=""
                 class="btn btn-primary btn-sm"
               >

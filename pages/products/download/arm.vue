@@ -20,7 +20,12 @@
             Products
           </NuxtLink>
         </li>
-        <li>ARM Download</li>
+        <li>
+          <NuxtLink href="/products">
+            Download
+          </NuxtLink>
+        </li>
+        <li>ARM</li>
       </ul>
     </div>
     <section class="text-gray-600 body-font dark:text-gray-400">
@@ -65,7 +70,7 @@
       </div>
 
       <div class="container px-5 pt-20 mx-auto flex w-full mb-12 justify-center">
-        <NuxtLink href="/products/download">
+        <NuxtLink href="/products/download/x86">
           <div class="btn btn-ghost leading-relaxe font-normal tracking-widerd">
             Click here for X86 images
           </div>
@@ -131,7 +136,7 @@ const latestDetailCard = ref('')
 // When the selection changes, update the query.
 watch(selectedDevice, (selectedDevice) => {
   router.push({
-    path: '/products/download-arm',
+    path: '/products/download/arm',
     query: { device: selectedDevice },
   })
 })
