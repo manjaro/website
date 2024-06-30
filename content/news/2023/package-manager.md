@@ -4,10 +4,11 @@ draft: true
 date: 2023-04-20 12:00:00
 kind: article
 image: header.png
-description: "Pamac Package Manager with latest improvements"
+description: "Pamac Package Manager With Latest Improvements"
 authors: [philm]
 ---
 Pamac Package Manager and its latest improvements
+
 Offline Updates
 One of the most notable improvements in the latest version of Pamac is the addition of offline updates. Users can now install system updates even if they are not connected to the internet, making it more convenient for those who are frequently on the go.
 
