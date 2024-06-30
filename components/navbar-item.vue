@@ -224,7 +224,11 @@ onMounted(() => {
 })
 
 const getLinkStyle = (name: string) => {
-  const path = useRoute().name.split('-')
+  const routeName = useRoute().name
+  if (!routeName) {
+    return ''
+  }
+  const path = routeName.split('-')
   let ret = 'hover:text-accent dark:hover:text-accent'
   if (path[0] == name) {
     if (path.length == 1) {
@@ -235,7 +239,12 @@ const getLinkStyle = (name: string) => {
   return ret
 }
 const getDropdownLinkStyle = (name: string) => {
-  const path = useRoute().name.split('-')
+  const routeName = useRoute().name
+  if (!routeName) {
+    return ''
+  }
+
+  const path = routeName.split('-')
   let ret = ''
   if (path[0] == name) {
     if (path.length == 1) {
@@ -246,7 +255,11 @@ const getDropdownLinkStyle = (name: string) => {
   return ret
 }
 const getAriaCurrent = (name: string) => {
-  const path = useRoute().name.split('-')
+  const routeName = useRoute().name
+  if (!routeName) {
+    return 'false'
+  }
+  const path = routeName.split('-')
   if (path[0] == name && path.length == 1) {
     return 'page'
   }
