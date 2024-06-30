@@ -1,10 +1,13 @@
 <template>
   <div class="max-w-screen-xl mx-auto">
-    <div class="mx-auto pt-6 px-6 breadcrumbs text-gray-600 dark:text-gray-500">
-      <ul>
+    <nav
+      class="mx-auto pt-6 px-4 text-gray-600 dark:text-gray-500"
+      aria-label="Breadcrumb"
+    >
+      <ol class="inline-flex flex-wrap items-center mb-3 sm:mb-0">
         <li>
           <NuxtLink
-            class="flex gap-1.5"
+            class="inline-flex items-center px-2 py-2 gap-2 text-center rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
             href="/news"
           >
             <svg
@@ -21,9 +24,21 @@
             News
           </NuxtLink>
         </li>
-        <li>{{ data.title }}</li>
-      </ul>
-    </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="13"
+          height="13"
+          fill="currentColor"
+          class="text-gray-300 dark:text-gray-600 mx-1"
+          viewBox="0 0 16 16"
+        >
+          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+        </svg>
+        <li class="inline-flex items-center px-2 py-2 gap-1.5 text-center">
+          {{ data.title }}
+        </li>
+      </ol>
+    </nav>
     <article class="max-w-screen-sm mx-auto px-6 pt-4 md:pt-6">
       <div class="pb-8">
         <NuxtImg
