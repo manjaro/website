@@ -129,11 +129,19 @@ if (!data.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page Not Found', fatal: true })
 }
 
-const imgPath = route.path + '/' + data.value.image
+const imgPath = route.path.replace(/\/$/, '') + '/' + data.value.image
 const author = getAuthors(data.value.authors)[0]
 const authorPicture = getAuthorPicture(data.value.authors[0])
 
 useHead({
   title: data.value.title + ' | Manjaro News',
+  titleTemplate: '',
+})
+useServerSeoMeta({
+  ogTitle: data.value.title,
+  description: data.value.description,
+  ogImage: 'https://manjaro.org' + imgPath,
+  twitterCard: 'summary_large_image',
+  twitterImage: 'https://manjaro.org' + imgPath,
 })
 </script>

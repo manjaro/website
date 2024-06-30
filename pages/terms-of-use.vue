@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Terms of Use' + ' – manjaro.org',
+  title: 'Terms of Use',
 })
 
 const route = useRoute()

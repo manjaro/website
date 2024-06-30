@@ -8,7 +8,11 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Contribute' + ' – manjaro.org',
+  title: 'Contribute',
+})
+useServerSeoMeta({
+  ogTitle: 'Contribute to Manjaro',
+  description: 'Learn ways how you can help the Manjaro Linux project.',
 })
 
 const route = useRoute()

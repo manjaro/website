@@ -57,7 +57,11 @@
 import desktops from '~/assets/desktops.json'
 
 useHead({
-  title: 'Download' + ' – manjaro.org',
+  title: 'Download X86',
+})
+useServerSeoMeta({
+  ogTitle: 'Manjaro Image Downloads',
+  description: 'Choose from major Linux Desktop environments to run Manjaro on your computer.',
 })
 
 const { data } = await useFetch('https://gitlab.manjaro.org/api/v4/projects/12597/repository/files/file-info.json/raw', {

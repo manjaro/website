@@ -159,7 +159,11 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Products' + ' – manjaro.org',
+  title: 'Products',
+})
+useServerSeoMeta({
+  ogTitle: 'Get Manjaro Linux',
+  description: 'Buy a device with Manjaro preinstalled or download an image to install Manjaro on your current device.',
 })
 
 const { data: devices } = await useAsyncData('/products/devices',

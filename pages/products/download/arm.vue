@@ -68,7 +68,11 @@
 import desktops from '~/assets/desktops.json'
 
 useHead({
-  title: 'Download ARM' + ' – manjaro.org',
+  title: 'Download ARM',
+})
+useServerSeoMeta({
+  ogTitle: 'Manjaro ARM Image Downloads',
+  description: 'Choose from major Linux Desktop environments to run Manjaro on a multitude of ARM devices.',
 })
 
 const { data } = await useFetch('https://gitlab.manjaro.org/api/v4/projects/12597/repository/files/file-info.json/raw', {

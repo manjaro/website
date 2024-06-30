@@ -314,6 +314,10 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Device Partner Program' + ' – manjaro.org',
+  title: 'Device Partner Program',
+})
+useServerSeoMeta({
+  ogTitle: 'Manjaro Device Partner Program',
+  description: 'Design and market your hardware device together with Manjaro.',
 })
 </script>

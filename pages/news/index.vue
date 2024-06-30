@@ -44,7 +44,11 @@
 import { useTimeAgo } from '@vueuse/core'
 
 useHead({
-  title: 'News' + ' – manjaro.org',
+  title: 'News',
+})
+useServerSeoMeta({
+  ogTitle: 'Manjaro News',
+  description: 'Articles about development and organization of the Manjaro project.',
 })
 
 const getImagePath = (path: string, file: string) => {
