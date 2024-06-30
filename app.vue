@@ -16,3 +16,9 @@ useSeoMeta({
   twitterImage: 'https://manjaro.org/meta-image.jpg',
 })
 </script>
+
+<style lang="css">
+html {
+  scrollbar-gutter: stable;
+}
+</style>
