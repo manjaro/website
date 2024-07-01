@@ -1,5 +1,5 @@
 <template>
-  <span class="inline-flex items-center gap-0.5">
+  <span class="inline-flex items-center space-x-2.5">
     <NuxtLink
       v-if="member.social.x"
       :href="member.social.x"
@@ -21,7 +21,7 @@
       v-if="member.social.github"
       :href="member.social.github"
       target="_blank"
-      class="ml-2 text-gray-500 h-5 w-5"
+      class="text-gray-500 h-5 w-5"
     >
       <svg
         fill="currentColor"
@@ -38,7 +38,7 @@
       v-if="member.social.forum"
       :href="member.social.forum"
       target="_blank"
-      class="ml-2 text-gray-500 h-[22px] w-[22px]"
+      class="text-gray-500 h-[22px] w-[22px]"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
