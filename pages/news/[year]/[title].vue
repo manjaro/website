@@ -80,7 +80,7 @@
           <div class="flex items-center gap-10">
             <NuxtImg
               v-if="authorPicture"
-              class="rounded-full object-cover"
+              class="h-[150px] w-[150px] rounded-full object-cover"
               :src="authorPicture"
               width="150px"
               alt="Author portrait"
