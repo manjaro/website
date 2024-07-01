@@ -123,7 +123,7 @@
         <div class="px-4 py-8 lg:py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase">
-              Our Solutions
+              Our Solution
             </p>
             <h2 class="text-2xl font-medium mb-4">
               Types of Services
