@@ -47,7 +47,7 @@
           width="600px"
         />
       </div>
-      <h1 class="mb-6 text-3xl font-semibold tracking-tight">
+      <h1 class="mb-8 text-3xl font-semibold tracking-tight">
         {{ data!.title }}
       </h1>
       <p class="mb-5 text-gray-800 dark:text-gray-300">
@@ -69,7 +69,7 @@
           {{ author.name }}
         </span>
       </div>
-      <section class="text-gray-900 dark:text-gray-200 prose dark:prose-invert">
+      <section class="pt-4 text-gray-900 dark:text-gray-200 prose prose-a:prose-headings:no-underline dark:prose-invert">
         <ContentRenderer :value="data!" />
       </section>
       <dialog
