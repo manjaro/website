@@ -17,8 +17,8 @@ Email: [Direct contact](mailto:management@manjaro.org)<br>
 VAT-Id.: DE 326352217
 
 ## Web Presence
-Concept: Manjaro GmbH &amp; Co. KG, Contact: Philip Müller<br>
-Design &amp; Programming: Roman Gilg, Vitor Lopes &amp; Web-Team<br>
+Concept: Manjaro GmbH &amp; Co. KG, Contact: Roman Gilg<br>
+Design &amp; Programming: Manjaro Web Team<br>
 Email: [Direct contact](mailto:info@manjaro.org)<br>
 
 ## References &amp; external links
@@ -28,7 +28,7 @@ On our website you'll find links to external third party websites. The Manjaro G
 The layout of this web presence, used images as well as publications and pictures are protected by copyright laws. Copying, distribution and use of the contents for other than the mentioned purposes is not allowed without a written permission of the Manjaro GmbH &amp; Co. KG or - if stated - the third party originator. The texts and images provided of this website may be used for commercial purposes within the scope of journalistic republication. However, the images remain protected property of the Manjaro GmbH &amp; Co. KG and require a respective label of origin. Alienation's not authorized or not noticeably carried out by the Manjaro GmbH &amp; Co. KG are prohibited.
 
 ## Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
-Name: Philip Müller<br>
+Name: Roman Gilg<br>
 Company: Manjaro GmbH &amp; Co. KG<br>
 Street: Kolonnenstraße 8<br> City: Berlin<br>
 State/Province: Berlin<br>
