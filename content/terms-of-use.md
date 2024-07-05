@@ -45,13 +45,13 @@ VAT-Id.: DE 326352217
 
 ### Web Presence
 
-Concept: Manjaro GmbH &amp; Co. KG, Contact: Philip Müller<br>
+Concept: Manjaro GmbH &amp; Co. KG, Contact: Roman Gilg<br>
 Design &amp; Programming: Vitor Lopes &amp; Web-Team<br>
 Email: <a href="https://manjaro.org/contact/">Direct contact</a>
 
 ### Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
 
-Name: Philip Müller<br>
+Name: Roman Gilg<br>
 Company: Manjaro GmbH &amp; Co. KG<br>
 Street: Kolonnenstraße 8<br>
 City: Berlin<br>State/Province: Berlin<br>
