@@ -198,7 +198,7 @@
         "id": "philm",
         "name": "Philip Müller",
         "role": "project lead",
-        "image": "",
+        "image": "jpg",
         "description": "Founded the project with Roland, Guillaume, Wlad and Allesandro back in 2011. Works on Kernels, Desktop and ARM, development tools and Devops.",
         "social": {
             "github": "https://github.com/philmmanjaro",
