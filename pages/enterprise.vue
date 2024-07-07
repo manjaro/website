@@ -76,23 +76,23 @@
         <div class="flex items-center justify-center -mx-4 lg:pl-8 lg:order-last">
           <div class="flex flex-col items-end px-3">
             <NuxtImg
-              class="object-scale-down mb-6 rounded shadow-lg dark:shadow-slate-800 h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56 p-4"
-              width="200px"
-              src="/enterprise/zscaler-logo.webp"
+              class="object-scale-down mb-6 rounded shadow-lg dark:shadow-slate-800 h-28 sm:h-36 xl:h-44 w-28 sm:w-36 xl:w-44 p-4"
+              width="400px"
+              src="/enterprise/gnome-calendar.webp"
               alt="Zscaler logo"
             />
             <NuxtImg
-              class="object-scale-down w-20 h-20 rounded shadow-lg dark:shadow-slate-800 sm:h-32 xl:h-40 sm:w-32 xl:w-40 p-4"
-              width="200px"
-              src="/enterprise/sentinel-one-logo.webp"
+              class="object-scale-down w-24 h-24 rounded shadow-lg dark:shadow-slate-800 sm:h-32 xl:h-40 sm:w-32 xl:w-40 p-4"
+              width="400px"
+              src="/enterprise/ollama-logo.webp"
               alt="SentinelOne logo"
             />
           </div>
           <div class="px-3">
             <NuxtImg
-              class="object-scale-down w-40 h-40 rounded shadow-lg dark:shadow-slate-800 sm:h-64 xl:h-80 sm:w-64 xl:w-80 p-8"
-              width="300px"
-              src="/enterprise/microsoft-365-logo.webp"
+              class="object-scale-down w-36 h-36 rounded shadow-lg dark:shadow-slate-800 sm:h-48 xl:h-60 sm:w-48 xl:w-60 p-8"
+              width="400px"
+              src="/enterprise/freeoffice-logo.webp"
               alt="Microsoft 365 logo"
             />
           </div>
