@@ -28,7 +28,8 @@
     "@vueuse/core": "^10.10.0",
     "@vueuse/nuxt": "^10.10.0",
     "daisyui": "^4.12.2",
-    "eslint": "^9.3.0"
+    "eslint": "^9.3.0",
+    "vite-plugin-eslint2": "^4.4.0"
   },
   "pnpm": {
     "overrides": {
