@@ -110,7 +110,7 @@
                 We have a lot of experience with packaging software for Linux, because that is what we do.
               </p>
               <p>
-                We already have packaged many business critical applications for Manjaro. And in case the one you need is still missing, we will package that for you too.
+                We already have packaged many business critical applications for Manjaro. And in case the one you need is still missing, we will promptly package it for you too.
               </p>
             </div>
           </div>
