@@ -40,7 +40,7 @@
     </div>
 
     <div class="px-4 sm:px-10 mt-14 md:mt-20">
-      <div class="max-w-7xl w-full mx-auto grid md:grid-cols-2 gap-10 place-items-center">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-14 xl:gap-20 place-items-center">
         <div class="md:order-last">
           <NuxtImg
             src="branch.webp"
@@ -64,14 +64,14 @@
       </div>
     </div>
 
-    <div class="px-4 sm:px-10 mt-14 md:mt-28">
-      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 place-items-center">
+    <div class="px-4 sm:px-10 pt-14 md:pt-24 xl:pt-28">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-14 xl:gap-20 place-items-center">
         <div>
           <NuxtImg
             src="company.webp"
             alt="Skyscrapers"
-            height="500px"
-            class="object-contain"
+            width="800px"
+            class="max-h-[350px] object-cover"
           />
         </div>
         <div>
