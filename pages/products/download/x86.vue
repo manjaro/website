@@ -57,7 +57,7 @@
 import desktops from '~/assets/desktops.json'
 
 useHead({
-  title: 'Download X86',
+  title: 'Download x86',
 })
 useServerSeoMeta({
   ogTitle: 'Manjaro Image Downloads',

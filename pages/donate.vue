@@ -33,7 +33,7 @@
               <label
                 for="arch1"
                 class="ml-2"
-              >X86</label>
+              >x86</label>
             </div>
             <div class="flex items-center">
               <input
