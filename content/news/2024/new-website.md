@@ -35,3 +35,8 @@ To achieve this in a comfortable way we use [Nuxt](https://nuxt.com/), a great J
 
 ### Easy to Maintain
 All code and content of the website is now contained in a single [GitHub repo](https://github.com/manjaro/website). On changes a new version of the website is automatically deployed. As the site is static, we can use the free hosting offer of [Cloudflare Pages](https://pages.cloudflare.com/) for that.
+
+## Feedback and Contribute
+We look forward to hearing your feedback. For that join the discussion in the [Manjaro Forum](https://forum.manjaro.org/t/our-new-official-manjaro-website/165270) or on [Reddit](https://www.reddit.com/r/manjaro/comments/1e0ss7t/new_manjaroorg_website/).
+
+And in case you want to contribute to the website directly, you can do that through a pull request to the GitHub repo. There are also some [open tickets](https://github.com/manjaro/website/issues) if you're looking for inspiration for a task.
