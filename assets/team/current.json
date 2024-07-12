@@ -15,9 +15,9 @@
     {
         "id": "jonasstr",
         "name": "Jonas Strassel",
-        "role": "DevOps engineer",
+        "role": "Developer",
         "image": "jpg",
-        "description": "Sway edition, infrastructure and software packaging.",
+        "description": "Maintenance and packaging for the Sway Edition",
         "social": {
             "github": "https://github.com/boredland",
             "x": "https://twitter.com/boredland069",
