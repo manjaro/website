@@ -7,7 +7,7 @@ size: 1
 coming: true
 ---
 * AMD Ryzen™ 7 7840U
-* Hall Sensing Joystick With RGB Lighting
-* 16GB/32GB LPDDR5 (7500MHz Dual Channel)
-* 512GB-2TB PCIe® 4.0 NVMe
-* Radeon™ Graphics 780m
+* Up to 32GB LPDDR5 RAM
+* Up to 2TB NVMe SSD
+* AMD Radeon™ 780M
+* 7" Display, 1920x1200 120Hz
