@@ -17,26 +17,26 @@
         "name": "Jonas Strassel",
         "role": "Developer",
         "image": "jpg",
-        "description": "Maintenance and packaging for the Sway Edition",
+        "description": "Jonas maintains and packages the Manjaro Sway edition.",
         "social": {
             "github": "https://github.com/boredland",
             "x": "https://twitter.com/boredland069",
             "forum": "https://forum.manjaro.org/u/boredland"
         },
-        "pos": 8
+        "pos": 9
     },
     {
         "id": "mwagie",
         "name": "Mark Wagie",
-        "role": "community manager",
-        "image": "",
-        "description": "Besides working with the community he also works on GNOME Edition and packaging.",
+        "role": "Community Manager",
+        "image": "jpg",
+        "description": "Follows user feedback closely and ensures available software is fresh and stable. Maintains the official GNOME edition and helps out with community editions.",
         "social": {
             "github": "https://github.com/yochananmarqos",
             "x": "",
             "forum": "https://forum.manjaro.org/u/yochanan"
         },
-        "pos": 6
+        "pos": 4
     },
     {
         "id": "raysher",
@@ -94,21 +94,21 @@
         "id": "fredhun",
         "name": "Frede Hundewadt",
         "role": "developer",
-        "image": "",
+        "image": "jpg",
         "description": "Frede is the author of pacman-mirrors, he does software maintenance and helps in the forum.",
         "social": {
-            "github": "",
+            "github": "https://github.com/fhdk",
             "x": "",
-            "forum": ""
+            "forum": "https://forum.manjaro.org/u/linux-aarhus"
         },
-        "pos": 10
+        "pos": 7
     },
     {
         "id": "mattih",
         "name": "Matti Hyttinen",
         "role": "developer",
         "image": "jpg",
-        "description": "Matti works on Gnome edition, Gnome Layout Switcher and packaging, he enjoys solving problems with Python or Bash.",
+        "description": "Matti works on GNOME edition, GNOME Layout Switcher and packaging, he enjoys solving problems with Python or Bash.",
         "social": {
             "github": "https://github.com/manjaro-gnome",
             "x": "",
@@ -121,35 +121,35 @@
         "name": "Stefano Capitani",
         "role": "developer",
         "image": "jpg",
-        "description": "Stefano lives and breathes Gnome. He works on packages and development tools and enjoys solving problems with Bash.",
+        "description": "Stefano lives and breathes GNOME. He works on packages and development tools and enjoys solving problems with Bash.",
         "social": {
             "github": "https://github.com/Ste74",
             "x": "https://twitter.com/capitani74",
             "forum": "https://forum.manjaro.org/u/ste74"
         },
-        "pos": 9
+        "pos": 10
     },
     {
         "id": "guilben",
         "name": "Guillaume Benoit",
         "role": "developer",
         "image": "",
-        "description": "One of the original founders who works on Pamac and related software management tools. Prefers working with the Gnome stack.",
+        "description": "One of the original founders who works on Pamac and related software management tools. Prefers working with the GNOME stack.",
         "social": {
             "github": "",
             "x": "",
             "forum": ""
         },
-        "pos": 7
+        "pos": 8
     },
     {
         "id": "artemg",
         "name": "Artem Grinev",
         "role": "developer",
         "image": "jpg",
-        "description": "Artem is a KDE head and prefers working with the Qt toolkit. Works on development tools, software and infrastructure.",
+        "description": "Artem is a KDE head and prefers working with the Qt toolkit. He works on development tools, software and infrastructure.",
         "social": {
-            "github": "",
+            "github": "https://github.com/LordTermor",
             "x": "",
             "forum": "https://forum.manjaro.org/u/lordtermor"
         },
@@ -160,26 +160,26 @@
         "name": "Bernhard Landauer",
         "role": "developer",
         "image": "jpg",
-        "description": "Bernhard joined the project in 2015. He works on our development tools, kernels, custom hardware projects, devops and the Plasma edition. Additionally he is the maintainer of the i3 and Cinnamon Community editions.",
+        "description": "Bernhard works on our development tools, kernels, DevOps and the Plasma edition. Additionally he is the maintainer of the i3 and Cinnamon Community editions.",
         "social": {
-            "github": "",
+            "github": "https://github.com/oberon-manjaro",
             "x": "",
             "forum": "https://forum.manjaro.org/u/oberon/"
         },
-        "pos": 4
+        "pos": 5
     },
     {
         "id": "vlopes",
         "name": "Vitor Lopes",
         "role": "web developer",
         "image": "jpg",
-        "description": "Joined the project in 2018, works on the web side of things, some software applications and Gnome testing. Prefers working with web technologies and enjoys solving problems with Python or JavaScript.",
+        "description": "Vitor works mostly on the web side of things, also on some of our apps and does GNOME testing. He enjoys solving problems with Python or JavaScript.",
         "social": {
             "github": "https://github.com/codesardine",
             "x": "https://twitter.com/codesardine",
             "forum": "https://forum.manjaro.org/u/codesardine/"
         },
-        "pos": 5
+        "pos": 6
     },
     {
         "id": "romangg",
