@@ -5,7 +5,7 @@ url: "https://store.minisforum.com/products/minisforum-um790-pro?_pos=1&_psq=man
 pos: 3
 size: 1
 ---
-* AMD Ryzen™ 9 7940HS Processor, 8 Cores/16 Threads (16M Cache, Up To 5.2 GHz)
+* AMD Ryzen™ 9 7940HS Processor
 * Up To 64GB RAM
-* Up To 1GB M.2 2280 PCIe4.0 SSD ×2
-* AMD Radeon™ 780M (Graphics Frequency 2800MHz)
+* 1TB SSD
+* AMD Radeon™ 780M
