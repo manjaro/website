@@ -6,7 +6,7 @@
     <ol class="inline-flex flex-wrap items-center mb-3 sm:mb-0">
       <li>
         <NuxtLink
-          class="inline-flex items-center px-2 py-2 gap-2 text-center rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
+          class="inline-flex items-center px-2 py-2 gap-2 text-center rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
           href="/products"
         >
           <svg
@@ -35,7 +35,7 @@
       <li>
         <NuxtLink
           href="/products"
-          class="inline-flex items-center px-2 py-2 gap-1.5 text-center rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
+          class="inline-flex items-center px-2 py-2 gap-1.5 text-center rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
         >
           Download
         </NuxtLink>
@@ -55,7 +55,7 @@
           <div
             tabindex="0"
             role="button"
-            class="inline-flex items-center px-2 py-2 gap-1.5 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
+            class="inline-flex items-center px-2 py-2 gap-1.5 text-center rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
           >
             {{ current }}
           </div>
