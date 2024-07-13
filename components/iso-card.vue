@@ -8,7 +8,7 @@
         :src="'/desktops/' + desktopId + '.webp'"
         alt="Desktop image"
         width="400"
-        class="relative object-cover h-40"
+        class="relative object-cover h-[180px]"
       />
     </figure>
     <div
