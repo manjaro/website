@@ -54,6 +54,6 @@ We are certain Manjaro Immutable can be a great solution for your business needs
 
 If you as a business choose to go with Linux on your endpoints, you have options in selecting your user space stack, your distributor, your security provider. This allows your internal experts to choose the right tools for the job and mitigate the risk of widespread system failures.
 
-No system is perfect, of course, but the diversity of solutions in open-source ecosystems is a crucial factor in reducing the risk of massive widespread system failures. Add to that the possibility for anyone to inspect, debug, and audit critical components of an open-source system stack, and it is evident that the such a system is superior to that of a closed-source monopolistic one.
+No system is perfect, of course, but the diversity of solutions in open-source ecosystems is a crucial factor in reducing the risk of massive widespread system failures. Add to that the possibility for anyone to inspect, debug, and audit critical components of an open-source system stack, and it is evident that such a system is superior to a closed-source monopolistic one.
 
 Linux has already proven this fact in a business context on most servers worldwide. It is time now we let it play to its strengths on client systems as well.
