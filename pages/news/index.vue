@@ -11,7 +11,7 @@
 
     <div class="mx-auto max-w-[400px] md:max-w-[820px] xl:max-w-max font-[sans-serif] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
       <NuxtLink
-        v-for="item of data"
+        v-for="item of paginatedData"
         :key="item.id"
         :href="item._path!"
         class="flex flex-col rounded overflow-hidden border dark:border-gray-700 transform hover:scale-[1.02] transition-transform duration-300"
@@ -37,6 +37,12 @@
         </div>
       </NuxtLink>
     </div>
+
+    <PaginationItem
+      v-model="currentPage"
+      :total-item="data?.length"
+      :item-per-page="itemPerPage"
+    />
   </section>
 </template>
 
@@ -60,4 +66,12 @@ const { data } = await useAsyncData('news-items-list', () =>
     .sort({ date: -1 })
     .find(),
 )
+
+const currentPage = ref(1)
+const itemPerPage = 9
+
+const paginatedData = computed(() => {
+  const startIndex = itemPerPage * (currentPage.value - 1)
+  return data.value?.slice(startIndex, startIndex + itemPerPage)
+})
 </script>
