@@ -5,7 +5,7 @@ date: 2022-10-27 12:00:00
 kind: article
 image: header.jpg
 description: "S22.10 Released, Issue With Qt5-Es2-Wayland, Kernel 6.0, 22.08 Download Statistic"
-authors: [vlopes]
+authors: [danjohn]
 ---
 ### 22.10 released!
 This month, as every other month does, included the 22.10 release builds. Not much has changed since the 22.08 release other than software updates on most devices. But we do have a new series of images this time around.

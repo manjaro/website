@@ -6,7 +6,7 @@ kind: article
 image: header.jpg
 description: "Merry Christmas And A Happy New Year, Hardware Accelerated Video Decoding On Rockchip,
 22.12 Released, PlaMo Beta 14 Released, 22.10 Download Statistics"
-authors: [vlopes]
+authors: [danjohn]
 ---
 **Merry Christmas and a Happy New Year**
 

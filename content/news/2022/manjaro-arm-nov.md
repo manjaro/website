@@ -5,7 +5,7 @@ date: 2022-11-27 12:00:00
 kind: article
 image: header.jpg
 description: "Slow Updates From Arch Linux ARM, Plasma Mobile Beta 13 Released, Pinebook Pro Images Will Be Back"
-authors: [vlopes]
+authors: [danjohn]
 ---
 **NOVEMBER 2022 IN MANJARO ARM**
 
