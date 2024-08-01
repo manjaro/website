@@ -12,6 +12,12 @@
       />
     </figure>
     <div
+      v-if="dateFromLink!=='' && showDetails"
+      class="absolute  right-2 bg-primary text-primary-content text-xs font-semibold px-2 py-1 rounded-full shadow-md"
+    >
+      {{ dateFromLink || '-' }}
+    </div>
+    <div
       v-if="!showDetails"
       class="card-body"
     >
@@ -120,8 +126,8 @@ const props = defineProps({
   desktopId: { type: String, required: true },
   desktopData: { type: Object, required: true },
   isoData: { type: Object, required: true },
-  showDetails: { type: Boolean, required: true } },
-)
+  showDetails: { type: Boolean, required: true },
+})
 const emit = defineEmits(['details-toggled'])
 
 function getDownloadLink() {
@@ -133,6 +139,7 @@ function getDownloadLink() {
 
 const showDetailsRef = ref(props.showDetails)
 const fullImage = ref(true)
+const dateFromLink = ref('')
 
 const enableDetails = () => {
   showDetailsRef.value = true
@@ -155,5 +162,27 @@ const getDetailEntry = (entry: string) => {
     return props.isoData.minimal[entry]
   }
   return props.isoData[entry]
+}
+
+if (props.isoData?.image) {
+  const datePattern = /(\d{6})/
+  const match = props.isoData.image.match(datePattern)
+
+  if (match) {
+    const dateStr = match[1]
+    const year = parseInt(dateStr.slice(0, 2), 10)
+    const month = parseInt(dateStr.slice(2, 4), 10) - 1
+    const day = parseInt(dateStr.slice(4, 6), 10)
+
+    const dateObj = new Date(2000 + year, month, day)
+
+    const options: Intl.DateTimeFormatOptions = {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }
+
+    dateFromLink.value = dateObj.toLocaleDateString(undefined, options)
+  }
 }
 </script>
