@@ -10,7 +10,7 @@
             "x": "",
             "forum": ""
         },
-        "pos": 13
+        "pos": 14
     },
     {
         "id": "jonasstr",
@@ -75,7 +75,7 @@
             "x": "",
             "forum": ""
         },
-        "pos": 14
+        "pos": 15
     },
     {
         "id": "jcrow",
@@ -88,7 +88,7 @@
             "x": "",
             "forum": ""
         },
-        "pos": 15
+        "pos": 16
     },
     {
         "id": "fredhun",
@@ -140,7 +140,7 @@
             "x": "",
             "forum": ""
         },
-        "pos": 8
+        "pos": 13
     },
     {
         "id": "artemg",
@@ -206,5 +206,18 @@
             "forum": "https://forum.manjaro.org/u/philm/"
         },
         "pos": 1
+    },
+    {
+        "id": "dennis",
+        "name": "Dennis ten Hoove",
+        "role": "developer",
+        "image": "",
+        "description": "Dennis is a platform engineer and Linux enthusiast, who works on industry and open-source projects alike. He also loves to document, what is kind of a rare virtue among developers.",
+        "social": {
+            "github": "https://github.com/dennis1248",
+            "x": "",
+            "forum": "https://forum.manjaro.org/u/dennis1248/"
+        },
+        "pos": 8
     }
 ]
