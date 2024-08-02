@@ -42,6 +42,7 @@
       v-model="currentPage"
       :total-item="data?.length"
       :item-per-page="itemPerPage"
+      class="pt-14"
     />
   </section>
 </template>
