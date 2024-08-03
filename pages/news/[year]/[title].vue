@@ -47,13 +47,13 @@
           width="600px"
         />
       </div>
-      <h1 class="mb-8 text-3xl font-semibold tracking-tight">
+      <h1 class="mb-7 text-3xl font-semibold tracking-tight">
         {{ data!.title }}
       </h1>
-      <p class="mb-5 text-gray-800 dark:text-gray-300">
+      <p class="mb-5 font-medium text-gray-800 dark:text-gray-300">
         {{ data!.description }}
       </p>
-      <div class="flex flex-row items-center text-gray-500">
+      <div class="flex flex-row items-center text-gray-700 dark:text-gray-400">
         {{ useDateFormat(data!.date, 'MMMM DD, YYYY').value }}, by&nbsp;
         <span
           class="flex items-center cursor-pointer"
