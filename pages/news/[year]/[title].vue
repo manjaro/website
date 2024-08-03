@@ -53,7 +53,7 @@
       <p class="mb-5 text-gray-800 dark:text-gray-300">
         {{ data!.description }}
       </p>
-      <div class="pb-2 flex flex-row items-center text-gray-500">
+      <div class="flex flex-row items-center text-gray-500">
         {{ useDateFormat(data!.date, 'MMMM DD, YYYY').value }}, by&nbsp;
         <span
           class="flex items-center cursor-pointer"
