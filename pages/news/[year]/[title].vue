@@ -7,7 +7,7 @@
       <ol class="inline-flex flex-wrap items-center mb-3 sm:mb-0">
         <li>
           <NuxtLink
-            class="inline-flex items-center px-2 py-2 gap-2 text-center rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
+            class="inline-flex items-center px-2 py-2 gap-2 rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
             href="/news"
           >
             <svg
@@ -34,7 +34,7 @@
         >
           <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
         </svg>
-        <li class="inline-flex items-center px-2 py-2 gap-1.5 text-center">
+        <li class="inline-flex items-center px-2 py-2 gap-1.5">
           {{ data!.title }}
         </li>
       </ol>
