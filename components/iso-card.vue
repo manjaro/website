@@ -13,7 +13,7 @@
     </figure>
     <div
       v-if="dateFromLink!=='' && showDetails"
-      class="absolute  right-2 bg-primary text-primary-content text-xs font-semibold px-2 py-1 rounded-full shadow-md"
+      class="absolute right-2 top-2 bg-primary text-primary-content text-xs font-semibold px-2 py-1 rounded-full shadow-md"
     >
       {{ dateFromLink || '-' }}
     </div>
