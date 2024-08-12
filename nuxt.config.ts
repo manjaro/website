@@ -3,7 +3,21 @@ import type { NitroConfig } from 'nitropack'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/color-mode'],
+  modules: [
+    '@nuxt/content',
+    '@nuxt/eslint',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/sitemap',
+  ],
+  site: {
+    url: 'https://manjaro.org/',
+    name: 'Manjaro – The Linux for People and Organizations',
+  },
+  sitemap: {
+    strictNuxtContentPaths: true,
+  },
   eslint: {
     checker: true,
     config: {
