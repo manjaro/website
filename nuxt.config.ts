@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     dataValue: 'theme', // for daisyUI
   },
   routeRules: {
+    '/news/page/1': { redirect: { to: '/news' } },
     '/products/download': { redirect: { to: '/products', statusCode: 302 } },
     '/download': { redirect: { to: '/products', statusCode: 302 } },
   },

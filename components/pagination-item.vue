@@ -4,15 +4,15 @@
     class="flex p-5 justify-center"
   >
     <div class="join">
-      <button
+      <NuxtLink
         v-for="page in pageNumbers"
         :key="page"
         :class="{ 'btn-primary': page === currentPage, 'btn-disabled': page === '...' }"
+        :to="page === 1 ? '/news': `/news/page/${page}`"
         class="join-item btn no-animation"
-        @click="handlePageChange(page)"
       >
         {{ page }}
-      </button>
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -40,10 +40,4 @@ const pageNumbers = computed(() => {
     return Array.from({ length: ttlPage.value }, (_, i) => i + 1)
   }
 })
-
-const handlePageChange = (page: number | string) => {
-  if (typeof page === 'number') {
-    currentPage.value = page
-  }
-}
 </script>
