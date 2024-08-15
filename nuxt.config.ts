@@ -17,6 +17,8 @@ export default defineNuxtConfig({
   },
   sitemap: {
     strictNuxtContentPaths: true,
+    exclude: ['/products/devices/**'],
+
   },
   eslint: {
     checker: true,
