@@ -5,8 +5,8 @@ url: "https://starlabs.systems/pages/starlite?partner=manjaro"
 pos: 5
 size: 1
 ---
-* Intel Pentium Silver™ N5030
-* 8GB RAM
-* 960GB SSD
-* Radeon™ RX Vega 10 1400 MHz
+* Intel Alder Lake N200
+* 16GB RAM
+* up to 2TB SSD
+* Intel UHD Graphics
 * 12.5" IPS Display, 2160x1440
