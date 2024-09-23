@@ -20,6 +20,9 @@ export default {
   },
   theme: {
     extend: {
+      dropShadow: {
+        'lg-slate-800': ['0 1px 2px #1e293b', '0 1px 1px #1e293b'],
+      },
       colors: {
         text: {
           50: '#12070f',
