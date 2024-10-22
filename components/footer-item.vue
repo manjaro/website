@@ -19,7 +19,7 @@
             </a>
             <div class="mt-4 lg:max-w-sm">
               <p class="text-sm text-gray-800 dark:text-gray-400">
-                The Manjaro project is backed up by Manjaro GmbH & Co. KG, an open source driven company.
+                The Manjaro project is backed by Manjaro GmbH & Co. KG, an open source driven company.
               </p>
             </div>
           </div>
