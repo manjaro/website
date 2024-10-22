@@ -20,7 +20,7 @@
         "description": "Jonas maintains and packages the Manjaro Sway edition.",
         "social": {
             "github": "https://github.com/boredland",
-            "x": "https://twitter.com/boredland069",
+            "x": "https://x.com/boredland069",
             "forum": "https://forum.manjaro.org/u/boredland"
         },
         "pos": 9
@@ -124,7 +124,7 @@
         "description": "Stefano lives and breathes GNOME. He works on packages and development tools and enjoys solving problems with Bash.",
         "social": {
             "github": "https://github.com/Ste74",
-            "x": "https://twitter.com/capitani74",
+            "x": "https://x.com/capitani74",
             "forum": "https://forum.manjaro.org/u/ste74"
         },
         "pos": 10
@@ -176,7 +176,7 @@
         "description": "Vitor works mostly on the web side of things, also on some of our apps and does GNOME testing. He enjoys solving problems with Python or JavaScript.",
         "social": {
             "github": "https://github.com/codesardine",
-            "x": "https://twitter.com/codesardine",
+            "x": "https://x.com/codesardine",
             "forum": "https://forum.manjaro.org/u/codesardine/"
         },
         "pos": 6
@@ -189,7 +189,7 @@
         "description": "Roman is a software architect with notable contributions to many open source projects. He also specializes in platform engineering and project management.",
         "social": {
             "github": "https://github.com/romangg",
-            "x": "https://twitter.com/roman_gilg",
+            "x": "https://x.com/roman_gilg",
             "forum": "https://forum.manjaro.org/u/romangg"
         },
         "pos": 2
@@ -202,7 +202,7 @@
         "description": "Founded the project with Roland, Guillaume, Wlad and Allesandro back in 2011. Works on Kernels, Desktop and ARM, development tools and Devops.",
         "social": {
             "github": "https://github.com/philmmanjaro",
-            "x": "https://twitter.com/philmmanjaro",
+            "x": "https://x.com/philmmanjaro",
             "forum": "https://forum.manjaro.org/u/philm/"
         },
         "pos": 1
