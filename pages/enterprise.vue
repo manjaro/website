@@ -280,7 +280,7 @@
                 class="btn btn-outline"
               >
                 <NuxtLink
-                  href="tel:004917686093949"
+                  href="tel:00493022012303"
                   target="_blank"
                 >
                   Phone
