@@ -1,6 +1,6 @@
 ### Volunteer as Software Developer or Packager
 
-There are many projects that require different packaging or programming languages skills. Head to Manjaro <a href="https://gitlab.manjaro.org/applications">GitLab</a>, pick the software you want to work on and contact one of the team members (preferably <a href="https://forum.manjaro.org/u/yochanan/summary">Mark</a> or <a href="https://forum.manjaro.org/u/romangg">Roman</a>) to ask them for account creation. Afterwards read <a href="https://docs.manjaro.org/how-to-send-a-pull-request-to-manjaro-gitlab-from-github/">sending PR&#x27;s</a> to get started.</p><p data-block-key="75q5">On the other side if you have some interesting software you have done that you want to be part of Manjaro get in touch with us using the <a href="https://manjaro.org/contact/">contact form</a>.
+There are many projects that require different packaging or programming languages skills. Head to Manjaro <a href="https://gitlab.manjaro.org/applications">GitLab</a>, pick the software you want to work on and contact one of the team members (preferably <a href="https://forum.manjaro.org/u/yochanan/summary">Mark</a> or <a href="https://forum.manjaro.org/u/romangg">Roman</a>) to ask them for account creation. Afterwards read <a href="https://docs.manjaro.org/how-to-send-a-pull-request-to-manjaro-gitlab-from-github/">sending PR&#x27;s</a> to get started.</p><p data-block-key="75q5">On the other side if you have some interesting software you have done that you want to be part of Manjaro get in touch with us via <a href="mailto:info@manjaro.org">email</a>.
 
 ### Volunteer as Web Developer/Designer
 
@@ -20,11 +20,11 @@ Forum moderator keep the forum organized and tidy. Ideally you already have some
 
 ### Volunteer for the Wiki
 
-You can volunteer for the wiki as documentation writer, to apply as a writer head to the wiki and <a href="https://wiki.manjaro.org/index.php?title=Special:CreateAccount&amp;returnto=Main+Page">create a account</a> after your account is approved you can start writing content.
+You can volunteer for the wiki as documentation writer, to apply as a writer head to the wiki and <a href="https://wiki.manjaro.org/index.php?title=Special:CreateAccount&amp;returnto=Main+Page">create an account</a> after your account is approved you can start writing content.
 
 ### You Want to Volunteer as Something Else We Have Not Covered
 
-Head to the <a href="https://manjaro.org/contact/">contact form</a> and email the Manjaro project.</p>
+Send an email to the <a href="mailto:info@manjaro.org">Manjaro Project</a></p>
 
 ### Mailing Lists
 These lists are not for communication but used for status reports.
