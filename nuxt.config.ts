@@ -31,7 +31,6 @@ export default defineNuxtConfig({
     id: '9f30d602-fae7-4a19-a411-0a9ed75e4ddc',
     host: 'https://umami.manjaro.org',
     autoTrack: true,
-    proxy: 'cloak',
     ignoreLocalhost: true,
     domains: ['manjaro.org'],
     // customEndpoint: '/api/getdata',
