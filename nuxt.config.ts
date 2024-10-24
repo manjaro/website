@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
+    'nuxt-umami',
   ],
   site: {
     url: 'https://manjaro.org/',
@@ -25,6 +26,15 @@ export default defineNuxtConfig({
     config: {
       stylistic: true,
     },
+  },
+  umami: {
+    id: '9f30d602-fae7-4a19-a411-0a9ed75e4ddc',
+    host: 'https://umami.manjaro.org',
+    autoTrack: true,
+    proxy: 'cloak',
+    ignoreLocalhost: true,
+    domains: ['manjaro.org'],
+    // customEndpoint: '/api/getdata',
   },
   colorMode: {
     preference: 'system',
