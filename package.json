@@ -27,10 +27,12 @@
     "@nuxtjs/color-mode": "^3.4.1",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "@tailwindcss/typography": "^0.5.13",
+    "@types/rss": "^0.0.32",
     "@vueuse/core": "^10.10.0",
     "@vueuse/nuxt": "^10.10.0",
     "daisyui": "^4.12.2",
     "eslint": "^9.3.0",
+    "rss": "^1.2.2",
     "vite-plugin-eslint2": "^4.4.0"
   },
   "pnpm": {

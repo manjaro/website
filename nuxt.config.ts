@@ -47,6 +47,11 @@ export default defineNuxtConfig({
   hooks: {
     async 'nitro:config'(nitroConfig) { await setDownloadRedirects(nitroConfig) },
   },
+  nitro: {
+    prerender: {
+      routes: ['/news/feed.xml'],
+    },
+  },
 })
 
 // Creates redirects for our official downloads. These are needed by GNOME Boxes and other software depending on libosinfo.
