@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 px-4 mx-auto max-w-screen-xl body-font">
+  <section class="pt-12 px-4 mx-auto max-w-screen-xl body-font">
     <div class="flex flex-col text-center w-full mb-14">
       <h1 class="text-3xl font-medium mb-4">
         News and Announcements
@@ -44,6 +44,13 @@
       :item-per-page="itemPerPage"
       class="pt-14"
     />
+
+    <a
+      href="/news/feed.xml"
+      class="flex justify-center pt-5"
+    >
+      <RssIcon />
+    </a>
   </section>
 </template>
 
