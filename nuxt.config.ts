@@ -49,7 +49,7 @@ export default defineNuxtConfig({
   },
 })
 
-// Creates redirects for our official downloads. These are needed by GNOME Boxes and other software debepnding on libosinfo.
+// Creates redirects for our official downloads. These are needed by GNOME Boxes and other software depending on libosinfo.
 // Links are registered at https://gitlab.com/libosinfo/osinfo-db/-/blob/4c64cef/data/os/manjaro.org/manjaro-rolling.xml.in
 const setDownloadRedirects = async (nitroConfig: NitroConfig) => {
   const rules = nitroConfig!.routeRules
