@@ -1,5 +1,6 @@
 <template>
-  <div class="card max-w-80 bg-base-100 shadow-xl">
+  <div class="card max-w-80 bg-base-100 shadow-xl"
+       :style="cardStyle">
     <figure
       v-if="!showDetails"
       class="relative"
@@ -13,13 +14,15 @@
     </figure>
     <div
       v-if="dateFromLink!=='' && showDetails"
-      class="absolute right-2 top-2 bg-primary text-primary-content text-xs font-semibold px-2 py-1 rounded-full shadow-md"
+      class="absolute left-2 top-2 bg-primary text-primary-content text-xs font-semibold px-2 py-1 rounded-full shadow-md"
+      :style="dateStyle"
     >
       {{ dateFromLink || '-' }}
     </div>
     <div
       v-if="!showDetails"
       class="card-body"
+      :style="frontStyle"
     >
       <h2 class="card-title">
         {{ desktopData.name }}
@@ -43,6 +46,7 @@
     <div
       v-if="showDetails"
       class="card-body"
+      :style="backStyle"
     >
       <h2 class="card-title">
         {{ desktopData.name }}
@@ -141,10 +145,41 @@ const showDetailsRef = ref(props.showDetails)
 const fullImage = ref(true)
 const dateFromLink = ref('')
 
+const cardStyle = computed(() => ({
+  transform: showDetailsRef.value ? 'rotateY(180deg)' : 'rotateY(0deg)',
+  transformStyle: 'preserve-3d',
+  transition: 'transform 0.6s',
+  position: 'relative',
+}))
+
+const frontStyle = computed(() => ({
+  backfaceVisibility: 'hidden',
+  position: showDetailsRef.value ? 'absolute' : 'relative',
+  width: '100%',
+}))
+
+const backStyle = computed(() => ({
+  backfaceVisibility: 'hidden',
+  transform: 'rotateY(180deg)',
+  position: 'absolute',
+  width: '100%',
+  top: 0,
+  left: 0,
+  height: '100%',
+  display: 'flex',
+  flexDirection: 'column',
+}))
+
+const dateStyle = computed(() => ({
+  transform: 'rotateY(180deg)',
+  backfaceVisibility: 'visible',
+}))
+
 const enableDetails = () => {
   showDetailsRef.value = true
   emit('details-toggled', props.desktopId, true)
 }
+
 const disableDetails = () => {
   showDetailsRef.value = false
   emit('details-toggled', props.desktopId, false)
@@ -185,4 +220,8 @@ if (props.isoData?.image) {
     dateFromLink.value = dateObj.toLocaleDateString(undefined, options)
   }
 }
+
+watch(() => props.showDetails, (newValue) => {
+  showDetailsRef.value = newValue
+})
 </script>
