@@ -4,6 +4,7 @@ name: "Zotac Gaming ZONE 2"
 url: "https://forum.manjaro.org/t/177928"
 pos: 3
 size: 1
+coming: true
 ---
 * AMD Ryzen™ AI 9 370HX
 * Up To 32GB RAM
