@@ -10,3 +10,4 @@ coming: true
 * Up To 32GB RAM
 * 1TB SSD
 * AMD Radeon™ 890M
+* 7" Display, 1920x1200 144Hz
