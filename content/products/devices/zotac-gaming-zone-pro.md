@@ -1,6 +1,6 @@
 ---
 make: "Zotac"
-name: "Gaming ZONE 2"
+name: "Gaming ZONE Pro"
 url: "https://forum.manjaro.org/t/177928"
 pos: 3
 size: 1
