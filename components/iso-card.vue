@@ -68,17 +68,17 @@
           </div>
           <div class="grid grid-cols-2 gap-4">
             <NuxtLink class="btn btn-secondary w-100" :href="getDetailEntry('torrent')">
-                Torrent
+              Torrent
             </NuxtLink>
             <NuxtLink class="btn btn-primary w-100" :href="getDetailEntry('image')">
-                Image
+              Image
             </NuxtLink>
             <NuxtLink v-if="getDetailEntry('signature')" class="btn btn-accent" :href="getDetailEntry('signature')">
-                Signature
+              Signature
             </NuxtLink>
             <NuxtLink class="btn btn-info" :href="getDetailEntry('checksum')">
-                Checksum
-              </NuxtLink>
+              Checksum
+            </NuxtLink>
           </div>
           <div class="flex justify-center tracking-tight text-sm gap-2 items-center">
             <div class="text-gray-500 dark:text-gray-600">
