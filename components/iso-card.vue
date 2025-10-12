@@ -67,29 +67,31 @@
             </div>
           </div>
           <div class="grid grid-cols-2 gap-4">
-            <button class="btn btn-secondary">
-              <NuxtLink :href="getDetailEntry('torrent')">
-                Torrent
-              </NuxtLink>
-            </button>
-            <button class="btn btn-primary">
-              <NuxtLink :href="getDetailEntry('image')">
-                Image
-              </NuxtLink>
-            </button>
-            <button
-              v-if="getDetailEntry('signature')"
-              class="btn btn-accent"
+            <NuxtLink
+              class="btn btn-secondary w-100"
+              :href="getDetailEntry('torrent')"
             >
-              <NuxtLink :href="getDetailEntry('signature')">
-                Signature
-              </NuxtLink>
-            </button>
-            <button class="btn btn-info">
-              <NuxtLink :href="getDetailEntry('checksum')">
-                Checksum
-              </NuxtLink>
-            </button>
+              Torrent
+            </NuxtLink>
+            <NuxtLink
+              class="btn btn-primary w-100"
+              :href="getDetailEntry('image')"
+            >
+              Image
+            </NuxtLink>
+            <NuxtLink
+              v-if="getDetailEntry('signature')"
+              class="btn btn-accent w-100"
+              :href="getDetailEntry('signature')"
+            >
+              Signature
+            </NuxtLink>
+            <NuxtLink
+              class="btn btn-info w-100"
+              :href="getDetailEntry('checksum')"
+            >
+              Checksum
+            </NuxtLink>
           </div>
           <div class="flex justify-center tracking-tight text-sm gap-2 items-center">
             <div class="text-gray-500 dark:text-gray-600">
