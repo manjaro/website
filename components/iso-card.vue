@@ -67,16 +67,29 @@
             </div>
           </div>
           <div class="grid grid-cols-2 gap-4">
-            <NuxtLink class="btn btn-secondary w-100" :href="getDetailEntry('torrent')">
+            <NuxtLink
+              class="btn btn-secondary w-100"
+              :href="getDetailEntry('torrent')"
+            >
               Torrent
             </NuxtLink>
-            <NuxtLink class="btn btn-primary w-100" :href="getDetailEntry('image')">
+            <NuxtLink
+              class="btn btn-primary w-100"
+              :href="getDetailEntry('image')"
+            >
               Image
             </NuxtLink>
-            <NuxtLink v-if="getDetailEntry('signature')" class="btn btn-accent w-100" :href="getDetailEntry('signature')">
+            <NuxtLink
+              v-if="getDetailEntry('signature')"
+              class="btn btn-accent w-100"
+              :href="getDetailEntry('signature')"
+            >
               Signature
             </NuxtLink>
-            <NuxtLink class="btn btn-info w-100" :href="getDetailEntry('checksum')">
+            <NuxtLink
+              class="btn btn-info w-100"
+              :href="getDetailEntry('checksum')"
+            >
               Checksum
             </NuxtLink>
           </div>
