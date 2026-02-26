@@ -7,8 +7,10 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 useHead({
-  title: 'Terms of Use',
+  title: t('legal.terms_title'),
 })
 
 const route = useRoute()

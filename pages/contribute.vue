@@ -7,12 +7,14 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 useHead({
-  title: 'Contribute',
+  title: t('contribute.meta_title'),
 })
 useServerSeoMeta({
-  ogTitle: 'Contribute to Manjaro',
-  description: 'Learn ways how you can help the Manjaro Linux project.',
+  ogTitle: t('contribute.meta_og_title'),
+  description: t('contribute.meta_description'),
 })
 
 const route = useRoute()

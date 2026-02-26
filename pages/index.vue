@@ -12,15 +12,15 @@
           </div>
           <div>
             <h1 class="text-3xl lg:text-4xl font-bold mb-6 sm:mb-3 lg:mb-6 !leading-[45px] lg:!leading-[55px] sm:font-s">
-              Manjaro Linux Empowering People and Organizations
+              {{ $t('home.hero_title') }}
             </h1>
             <p class="text-base leading-relaxed tracking-wider">
-              Taking the raw power and flexibility of Arch Linux and making it more accessible for a greater audience.
+              {{ $t('home.hero_subtitle') }}
             </p>
             <div class="flex flex-wrap gap-y-4 gap-x-8 mt-8">
               <NuxtLink href="/products/download/x86">
                 <button class="btn lg:btn-lg flex gap-5">
-                  <div>Download</div>
+                  <div>{{ $t('common.download') }}</div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -50,16 +50,19 @@
         </div>
         <div>
           <h2 class="text-2xl lg:text-3xl font-semibold mb-6">
-            Robust with Rolling Releases
+            {{ $t('home.robust_title') }}
           </h2>
           <p class="pb-2">
-            Experience a combination of the latest software for your enjoyment, your development, your creation needs,
-            and well-tested updates.
+            {{ $t('home.robust_p') }}
           </p>
-          <p>
-            We follow an approach of <span class="font-semibold">cascading stability</span> to let you pick the version of
-            Manjaro that fits your needs.
-          </p>
+          <i18n-t
+            keypath="home.cascading_stability"
+            tag="p"
+          >
+            <template #stability>
+              <span class="font-semibold">{{ $t('home.stability') }}</span>
+            </template>
+          </i18n-t>
         </div>
       </div>
     </div>
@@ -77,15 +80,15 @@
         <div>
           <div>
             <h2 class="text-2xl lg:text-3xl font-semibold mb-6">
-              Enterprise Grade
+              {{ $t('home.enterprise_title') }}
             </h2>
             <p>
-              Manjaro comes in different versions suitable for home but also business use. We offer first-class services to provide businesses with the means to make efficient use of their IT infrastructure leveraging Manjaro Linux.
+              {{ $t('home.enterprise_p') }}
             </p>
           </div>
           <NuxtLink href="/enterprise">
             <button class="flex items-center px-5 py-4 mt-8 btn">
-              Learn More
+              {{ $t('common.learn_more') }}
             </button>
           </NuxtLink>
         </div>
@@ -95,8 +98,9 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 useHead({
-  title: 'Manjaro – The Linux for People and Organizations',
-  titleTemplate: '',
+  title: t('home.welcome'),
+  titleTemplate: t('home.hero_title'),
 })
 </script>

@@ -3,10 +3,10 @@
     <div class="container pt-12 mx-auto px-6 xl:px-12">
       <div class="flex flex-col text-center mb-14">
         <h1 class="text-3xl font-medium mb-4">
-          Install Media
+          {{ $t('products.title') }}
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-700 dark:text-gray-400">
-          Live ISOs with the latest software are regularly released. A new Manjaro system can be installed easily from these.
+          {{ $t('products.description') }}
         </p>
       </div>
       <div class="pb-8 mx-auto lg:pb-14">
@@ -29,14 +29,14 @@
           <div class="flex flex-col justify-center p-8 lg:p-16 lg:pl-10 lg:w-1/2">
             <div>
               <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-accent uppercase rounded-full">
-                x86 Architecture
+                {{ $t('products.x86_title') }}
               </p>
             </div>
             <h5 class="mb-3 text-3xl font-bold leading-none">
-              For Workstations and Laptops
+              {{ $t('products.x86_subtitle') }}
             </h5>
             <p class="mb-5 text-gray-700 dark:text-gray-400">
-              The standard version of Manjaro. This image is suitable for most personal computers.
+              {{ $t('products.x86_description') }}
             </p>
             <div class="flex items-center">
               <NuxtLink
@@ -44,7 +44,7 @@
                 aria-label=""
                 class="btn btn-primary"
               >
-                Download
+                {{ $t('common.download') }}
               </NuxtLink>
             </div>
           </div>
@@ -55,14 +55,14 @@
           <div class="flex flex-col justify-center p-8 lg:p-6 lg:pl-10 lg:w-1/2">
             <div>
               <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-accent uppercase rounded-full">
-                ARM Architecture
+                {{ $t('products.arm_title') }}
               </p>
             </div>
             <h5 class="mb-2 text-xl font-bold leading-none sm:text-xl">
-              For Phones and Embedded
+              {{ $t('products.arm_subtitle') }}
             </h5>
             <p class="mb-5 text-gray-700 dark:text-gray-400">
-              For a selection of embedded and mobile devices.
+              {{ $t('products.arm_description') }}
             </p>
             <div class="flex items-center">
               <NuxtLink
@@ -70,7 +70,7 @@
                 aria-label=""
                 class="btn btn-primary btn-sm"
               >
-                Download
+                {{ $t('common.download') }}
               </NuxtLink>
             </div>
           </div>
@@ -97,23 +97,23 @@
     <div class="container pt-12 mx-auto px-6 xl:px-12">
       <div class="flex flex-col text-center mb-14">
         <h1 class="text-3xl font-medium mb-4">
-          Devices
+          {{ $t('products.devices_title') }}
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-700 dark:text-gray-400">
-          Our hardware partners offer attractive devices with Manjaro preinstalled.
+          {{ $t('products.devices_description') }}
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-8 mx-auto lg:pb-14 gap-10">
         <div
           v-for="device in devices"
-          :key="device"
+          :key="device._path"
           class="relative w-full md:w-auto flex flex-col place-content-start border dark:border-gray-800 rounded shadow-sm sm:mx-auto p-8 dark:bg-gray-900"
         >
           <div
             v-if="device.coming"
             class="absolute right-0 top-0 text-warning dark:text-yellow-600 border-l-2 border-b-2 bg-gray-50 border-gray-200 dark:bg-gray-900 dark:border-gray-950 font-semibold tracking-wider uppercase p-2"
           >
-            Coming Soon
+            {{ $t('products.coming_soon') }}
           </div>
           <div class="self-center">
             <NuxtImg
@@ -148,7 +148,7 @@
               aria-label=""
               class="btn btn-primary"
             >
-              More Info
+              {{ $t('products.more_info') }}
             </NuxtLink>
           </div>
         </div>
@@ -158,12 +158,13 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 useHead({
-  title: 'Products',
+  title: t('navbar.products'),
 })
 useServerSeoMeta({
-  ogTitle: 'Get Manjaro Linux',
-  description: 'Buy a device with Manjaro preinstalled or download an image to install Manjaro on your current device.',
+  ogTitle: t('products.devices_description'),
+  description: t('products.devices_description'),
 })
 
 const { data: devices } = await useAsyncData('/products/devices',

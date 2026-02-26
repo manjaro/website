@@ -7,8 +7,10 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 useHead({
-  title: 'Imprint',
+  title: t('legal.imprint_title'),
 })
 
 const route = useRoute()

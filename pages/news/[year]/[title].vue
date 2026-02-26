@@ -2,7 +2,7 @@
   <div class="max-w-screen-xl mx-auto">
     <nav
       class="mx-auto pt-6 px-4 text-gray-600 dark:text-gray-500"
-      aria-label="Breadcrumb"
+      :aria-label="$t('news.breadcrumb')"
     >
       <ol class="inline-flex flex-wrap items-center mb-3 sm:mb-0">
         <li>
@@ -21,7 +21,7 @@
               <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z" />
               <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z" />
             </svg>
-            News
+            {{ $t('news.news_link') }}
           </NuxtLink>
         </li>
         <svg
@@ -43,7 +43,7 @@
       <div class="pb-8">
         <NuxtImg
           :src="imgPath"
-          alt="Header image"
+          :alt="$t('news.header_alt')"
           width="600px"
         />
       </div>
@@ -54,7 +54,7 @@
         {{ data!.description }}
       </p>
       <div class="flex flex-row items-center text-gray-700 dark:text-gray-400">
-        {{ useDateFormat(data!.date, 'MMMM DD, YYYY').value }}, by&nbsp;
+        {{ useDateFormat(data!.date, 'MMMM DD, YYYY').value }}, {{ $t('news.by') }}&nbsp;
         <span
           class="flex items-center cursor-pointer"
           onclick="author_modal.showModal()"
@@ -64,7 +64,7 @@
             class="mx-2 w-9 h-9 rounded-full object-cover"
             :src="authorPicture"
             width="50px"
-            alt="Author portrait"
+            :alt="$t('news.author_alt')"
           />
           {{ author.name }}
         </span>
@@ -83,7 +83,7 @@
               class="h-[150px] w-[150px] rounded-full object-cover"
               :src="authorPicture"
               width="150px"
-              alt="Author portrait"
+              :alt="$t('news.author_alt')"
             />
             <div class="min-h-28">
               <h3 class="text-lg font-bold">
@@ -97,7 +97,7 @@
               </p>
               <TeamSocial
                 v-if="author.social.x || author.social.github || author.social.forum"
-                class="pt-4"
+                class="mt-4"
                 :member="author"
               />
             </div>

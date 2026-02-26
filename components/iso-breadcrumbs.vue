@@ -1,7 +1,7 @@
 <template>
   <nav
     class="mx-auto pt-6 px-4 text-gray-600 dark:text-gray-500"
-    aria-label="Breadcrumb"
+    :aria-label="$t('iso.breadcrumbs_aria')"
   >
     <ol class="inline-flex flex-wrap items-center mb-3 sm:mb-0">
       <li>
@@ -19,7 +19,7 @@
           >
             <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
           </svg>
-          Products
+          {{ $t('navbar.products') }}
         </NuxtLink>
       </li>
       <svg
@@ -37,7 +37,7 @@
           href="/products"
           class="inline-flex items-center px-2 py-2 gap-1.5 text-center rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
         >
-          Download
+          {{ $t('common.download') }}
         </NuxtLink>
       </li>
       <svg

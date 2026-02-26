@@ -1,0 +1,42 @@
+{
+  "plasma": {
+    "name": "KDE Plasma",
+    "description": "Plasma is one of the most advanced desktops and offers great flexibility. Suitable for beginners and pros."
+  },
+  "gnome": {
+    "name": "GNOME",
+    "description": "GNOME is a modern desktop, the layout is different from other options but easy and intuitive to learn."
+  },
+  "xfce": {
+    "name": "Xfce",
+    "description": "Xfce is a lightweight desktop. It aims to be fast and low on system resources, while being rock solid."
+  },
+  "mate": {
+    "name": "MATE",
+    "description": "MATE is a derivative of the now deprecated GNOME 2. It provides an intuitive desktop using traditional metaphors."
+  },
+  "cinnamon": {
+    "name": "Cinnamon",
+    "description": "Cinnamon is a desktop that follows traditional desktop conventions. It is often recommended for beginners."
+  },
+  "i3": {
+    "name": "i3 Window Manager",
+    "description": "i3 is a tiling X11 window manager, and not a complete desktop environment. For advanced users only."
+  },
+  "minimal": {
+    "name": "Minimal",
+    "description": "Without a desktop environment. Suitable for advanced users who want to build their own setup from the ground up."
+  },
+  "plasma-mobile": {
+    "name": "Plasma Mobile",
+    "description": "Modern phone UI based on KDE Plasma, built with KDE/QT and Kirigami technologies."
+  },
+  "phosh": {
+    "name": "Phosh",
+    "description": "Phosh is a UI based on GNOME mobile technologies. It is the default graphical shell on Purism’s commercial phones."
+  },
+  "sway": {
+    "name": "Sway WM",
+    "description": "Sway is a tiling Wayland compositor and a drop-in replacement for the i3 window manager. For advanced users only."
+  }
+}

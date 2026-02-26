@@ -1,0 +1,42 @@
+{
+  "plasma": {
+    "name": "KDE Plasma",
+    "description": "Plasma ist einer der fortschrittlichsten Desktop-Umgebungen und bietet hohe Flexibilität. Geeignet für Anfänger und Profis."
+  },
+  "gnome": {
+    "name": "GNOME",
+    "description": "GNOME ist ein moderner Desktop. Sein Layout unterscheidet sich von anderen Optionen, ist jedoch einfach und intuitiv zu bedienen."
+  },
+  "xfce": {
+    "name": "Xfce",
+    "description": "Xfce ist eine leichtgewichtige Desktop-Umgebung. Sie ist ressourcenschonend, schnell und gleichzeitig sehr zuverlässig."
+  },
+  "mate": {
+    "name": "MATE",
+    "description": "MATE ist ein Nachfolger des inzwischen veralteten GNOME 2 und bietet einen intuitiven Desktop mit traditionellen Metaphern."
+  },
+  "cinnamon": {
+    "name": "Cinnamon",
+    "description": "Cinnamon folgt den traditionellen Desktop-Konventionen und wird besonders Anfängern empfohlen."
+  },
+  "i3": {
+    "name": "i3 Window Manager",
+    "description": "i3 ist ein Tiling-Window-Manager für X11, keine vollständige Desktop-Umgebung. Nur für erfahrene Nutzer geeignet."
+  },
+  "minimal": {
+    "name": "Minimal",
+    "description": "Ohne Desktop-Umgebung. Ideal für fortgeschrittene Nutzer, die ihr System von Grund auf selbst einrichten möchten."
+  },
+  "plasma-mobile": {
+    "name": "Plasma Mobile",
+    "description": "Moderne Benutzeroberfläche für Smartphones basierend auf KDE Plasma, entwickelt mit KDE/QT- und Kirigami-Technologien."
+  },
+  "phosh": {
+    "name": "Phosh",
+    "description": "Phosh basiert auf GNOME-Mobile-Technologien und ist die Standardoberfläche auf den kommerziellen Smartphones von Purism."
+  },
+  "sway": {
+    "name": "Sway WM",
+    "description": "Sway ist ein Tiling-Wayland-Compositor und ein direkter Ersatz für den i3 Window Manager. Nur für erfahrene Nutzer geeignet."
+  }
+}

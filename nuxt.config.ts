@@ -1,4 +1,5 @@
 import type { NitroConfig } from 'nitropack'
+import { locales } from './i18n/locales.config'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -11,7 +12,19 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
     'nuxt-umami',
+    '@nuxtjs/i18n',
   ],
+  i18n: {
+    locales,
+    langDir: 'locales/',
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'no prefix',
+    },
+  },
   site: {
     url: 'https://manjaro.org/',
     name: 'Manjaro – The Linux for People and Organizations',
@@ -58,13 +71,18 @@ export default defineNuxtConfig({
 // Links are registered at https://gitlab.com/libosinfo/osinfo-db/-/blob/4c64cef/data/os/manjaro.org/manjaro-rolling.xml.in
 const setDownloadRedirects = async (nitroConfig: NitroConfig) => {
   const rules = nitroConfig!.routeRules
-  const resp = await fetch('https://gitlab.manjaro.org/api/v4/projects/12597/repository/files/file-info.json/raw?ref=master')
-  const isos = await resp.json()
+  try {
+    const resp = await fetch('https://gitlab.manjaro.org/api/v4/projects/12597/repository/files/file-info.json/raw?ref=master')
+    const isos = await resp.json()
 
-  const add = (desktop: string) => {
-    rules!['/download/' + desktop] = { redirect: { to: isos.official[desktop].image, statusCode: 302 } }
+    const add = (desktop: string) => {
+      rules!['/download/' + desktop] = { redirect: { to: isos.official[desktop].image, statusCode: 302 } }
+    }
+    add('gnome')
+    add('plasma')
+    add('xfce')
   }
-  add('gnome')
-  add('plasma')
-  add('xfce')
+  catch (e) {
+    console.error('Failed to fetch download redirects:', e)
+  }
 }

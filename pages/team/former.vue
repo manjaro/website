@@ -3,10 +3,10 @@
     <div class="mx-auto pt-12 px-4">
       <div class="flex flex-col text-center mb-10">
         <h1 class="text-3xl font-medium mb-4">
-          Former Members
+          {{ $t('team.former_title') }}
         </h1>
         <p class="max-w-[670px] mx-auto leading-relaxed text-gray-700 dark:text-gray-400">
-          The following people were part of the Manjaro Team in the past and helped it prosper. We want to thank them a lot for that.
+          {{ $t('team.former_description') }}
         </p>
       </div>
       <div class="mx-auto max-xl:max-w-[850px]">
@@ -24,7 +24,7 @@
     <div class="container px-5 pt-20 mx-auto flex w-full mb-12 justify-center">
       <NuxtLink href="/team">
         <div class="btn btn-ghost leading-relaxed font-normal tracking-wider">
-          Current team members
+          {{ $t('team.current_link') }}
         </div>
       </NuxtLink>
     </div>
@@ -34,12 +34,14 @@
 <script setup lang="ts">
 import team from '~/assets/team/former.json'
 
+const { t } = useI18n()
+
 useHead({
-  title: 'Former Team Members',
+  title: t('team.meta_former_title'),
 })
 useServerSeoMeta({
-  ogTitle: 'Former Manjaro Team Members',
-  description: 'A list of awesome people who were part of the Manjaro Team in the past.',
+  ogTitle: t('team.meta_former_og_title'),
+  description: t('team.meta_former_description'),
 })
 
 const sortedTeam = team.sort((a, b) => a.pos - b.pos)
