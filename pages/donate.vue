@@ -7,11 +7,11 @@
           alt="Manjaro contributors"
         >
         <div class="py-8 prose dark:prose-invert">
-          <h2>How We Use Donations</h2>
-          <p>Manjaro, like many other open-source projects, relies on the generosity of its community through donations and corporate sponsorships to support its growth and development.</p>
-          <p>These donations are essential in covering the various expenses incurred in the operations of the project such as server costs, software development tools, infrastructure expenses, training, flying people to events or conferences and the salaries of key developers. With the help of these donations, Manjaro is able to secure the necessary financial stability that allows the project to continuously improve and remain active.</p>
-          <p>Moreover, being a volunteer-driven project, donations play a crucial role in compensating the hard work and dedication of Manjaro's developers and maintainers.</p>
-          <p>By providing them with the necessary support, donations help to ensure that the project remains well-supported and actively maintained. In conclusion, donations are an essential part of the Manjaro project's long-term sustainability and growth. They help to keep the project accessible and of high-quality, ensuring that it remains a valuable resource for its users.</p>
+          <h2>{{ $t('donate.title') }}</h2>
+          <p>{{ $t('donate.p1') }}</p>
+          <p>{{ $t('donate.p2') }}</p>
+          <p>{{ $t('donate.p3') }}</p>
+          <p>{{ $t('donate.p4') }}</p>
         </div>
       </div>
       <div
@@ -55,7 +55,7 @@
             class="py-4 flex flex-row justify-center items-center space-x-4"
           >
             <div>
-              Currency:
+              {{ $t('donate.currency') }}
             </div>
             <select
               v-model="selectedCurrency"
@@ -86,12 +86,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+const { t } = useI18n()
+
 useHead({
-  title: 'Donate',
+  title: t('donate.meta_title'),
 })
 useServerSeoMeta({
-  ogTitle: 'Donate to Manjaro',
-  description: 'Help the Manjaro project with a financial contribution.',
+  ogTitle: t('donate.meta_og_title'),
+  description: t('donate.meta_description'),
 })
 
 const arch = defineModel({ type: String, default: 'x86' })

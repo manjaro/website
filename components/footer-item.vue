@@ -4,7 +4,7 @@
       <div class="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
           <div class="md:max-w-md lg:col-span-2">
-            <a
+            <NuxtLink
               href="/"
               aria-label="Go home"
               title="Manjaro"
@@ -16,7 +16,7 @@
                 alt="Manjaro Logo"
               >
               <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 dark:text-gray-400">Manjaro</span>
-            </a>
+            </NuxtLink>
             <div class="mt-4 lg:max-w-sm">
               <p class="text-sm text-gray-800 dark:text-gray-400">
                 The Manjaro project is backed by Manjaro GmbH & Co. KG, an open source driven company.
@@ -26,57 +26,57 @@
           <div class="grid grid-cols-2 gap-8 row-gap-8 lg:col-span-4 md:grid-cols-4">
             <div>
               <p class="font-semibold tracking-wide text-gray-800 dark:text-gray-400">
-                People
+                {{ $t('footer.people') }}
               </p>
               <ul class="mt-2 space-y-2">
                 <li>
-                  <a
+                  <NuxtLink
                     href="/team"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Team</a>
+                  >{{ $t('footer.team') }}</NuxtLink>
                 </li>
                 <li>
-                  <a
+                  <NuxtLink
                     href="/donate"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Donate</a>
+                  >{{ $t('footer.donate') }}</NuxtLink>
                 </li>
                 <li>
-                  <a
+                  <NuxtLink
                     href="/contribute"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Contribute</a>
+                  >{{ $t('footer.contribute') }}</NuxtLink>
                 </li>
               </ul>
             </div>
             <div>
               <p class="font-semibold tracking-wide text-gray-800 dark:text-gray-400">
-                Commercial
+                {{ $t('footer.commercial') }}
               </p>
               <ul class="mt-2 space-y-2">
                 <li>
-                  <a
+                  <NuxtLink
                     href="/partners"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Partners</a>
+                  >{{ $t('footer.partners') }}</NuxtLink>
                 </li>
                 <li>
-                  <a
+                  <NuxtLink
                     href="/dpp"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >DPP</a>
+                  >{{ $t('footer.dpp') }}</NuxtLink>
                 </li>
                 <li>
-                  <a
+                  <NuxtLink
                     href="/enterprise#contact-us"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Contact</a>
+                  >{{ $t('footer.contact') }}</NuxtLink>
                 </li>
               </ul>
             </div>
             <div>
               <p class="font-semibold tracking-wide text-gray-800 dark:text-gray-400">
-                Status
+                {{ $t('footer.status') }}
               </p>
               <ul class="mt-2 space-y-2">
                 <li>
@@ -84,47 +84,46 @@
                     href="https://repo.manjaro.org/"
                     target="_blank"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Mirrors</a>
+                  >{{ $t('footer.mirrors') }}</a>
                 </li>
                 <li>
                   <a
                     href="https://manjaristas.org/branch_compare"
                     target="_blank"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Packages</a>
+                  >{{ $t('footer.packages') }}</a>
                 </li>
                 <li>
                   <a
                     href="https://status.manjaro.org"
                     target="_blank"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Servers</a>
+                  >{{ $t('footer.servers') }}</a>
                 </li>
               </ul>
             </div>
             <div>
               <p class="font-semibold tracking-wide text-gray-800 dark:text-gray-400">
-                Legal
+                {{ $t('footer.legal') }}
               </p>
               <ul class="mt-2 space-y-2">
                 <li>
-                  <a
+                  <NuxtLink
                     href="/privacy-policy"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Privacy Policy</a>
+                  >{{ $t('footer.privacy_policy') }}</NuxtLink>
                 </li>
                 <li>
-                  <a
+                  <NuxtLink
                     href="/terms-of-use"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Terms
-                    Of Use</a>
+                  >{{ $t('footer.terms_of_use') }}</NuxtLink>
                 </li>
                 <li>
-                  <a
+                  <NuxtLink
                     href="/imprint"
                     class="text-gray-600 dark:text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >Imprint</a>
+                  >{{ $t('footer.imprint') }}</NuxtLink>
                 </li>
               </ul>
             </div>

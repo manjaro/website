@@ -13,10 +13,10 @@
         <div class="flex flex-col justify-center">
           <div class="max-w-xl mb-6">
             <h2 class="text-3xl lg:text-4xl font-medium mb-4">
-              Enterprise Services
+              {{ $t('enterprise.title') }}
             </h2>
             <p class="text-base text-gray-700 dark:text-gray-400 md:text-lg">
-              Let us help your organization with the setup and management of your Manjaro Linux systems in an efficient and safe way.
+              {{ $t('enterprise.hero_description') }}
             </p>
           </div>
           <div class="grid gap-8 row-gap-8 sm:grid-cols-2">
@@ -37,10 +37,10 @@
                 </svg>
               </div>
               <h6 class="mb-2 font-semibold leading-5">
-                From the Creators
+                {{ $t('enterprise.feature_creators_title') }}
               </h6>
               <p class="text-gray-800 dark:text-gray-300">
-                Support directly from the creators of your distribution gives you access to the best possible experts about it.
+                {{ $t('enterprise.feature_creators_p') }}
               </p>
             </div>
             <div>
@@ -60,11 +60,17 @@
                 </svg>
               </div>
               <h6 class="mb-2 font-semibold leading-5">
-                Corporate Backed
+                {{ $t('enterprise.feature_corporate_title') }}
               </h6>
-              <p class="text-gray-900 dark:text-gray-300">
-                With the <i>Manjaro GmbH&nbsp;&&nbsp;Co.&nbsp;KG</i> a legal entity exists that provides services you can rely on.
-              </p>
+              <i18n-t
+                keypath="enterprise.feature_corporate_p"
+                tag="p"
+                class="text-gray-900 dark:text-gray-300"
+              >
+                <template #company>
+                  <i>Manjaro GmbH&nbsp;&&nbsp;Co.&nbsp;KG</i>
+                </template>
+              </i18n-t>
             </div>
           </div>
         </div>
@@ -100,17 +106,17 @@
         <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
           <div class="max-w-xl">
             <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase">
-              We Make It Work
+              {{ $t('enterprise.integrate_header') }}
             </p>
             <h2 class="text-2xl font-medium mb-4">
-              Integrate All Your Business Software
+              {{ $t('enterprise.integrate_title') }}
             </h2>
             <div class="text-base text-gray-700 dark:text-gray-300 md:text-lg">
               <p class="pb-3">
-                We have a lot of experience with packaging software for Linux, because that is what we do.
+                {{ $t('enterprise.integrate_p1') }}
               </p>
               <p>
-                We already have packaged many business critical applications for Manjaro. And in case the one you need is still missing, we will promptly package it for you too.
+                {{ $t('enterprise.integrate_p2') }}
               </p>
             </div>
           </div>
@@ -123,13 +129,13 @@
         <div class="px-4 py-8 lg:py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase">
-              Our Solution
+              {{ $t('enterprise.solutions_header') }}
             </p>
             <h2 class="text-2xl font-medium mb-4">
-              Types of Services
+              {{ $t('enterprise.solutions_title') }}
             </h2>
             <p class="text-base text-gray-700 dark:text-gray-400 md:text-lg">
-              Depending on your organizational structure and needs we provide different kind of support services. Reach out to us for more details and a quota.
+              {{ $t('enterprise.solutions_description') }}
             </p>
           </div>
           <div class="grid max-w-screen-lg gap-8 row-gap-10 mx-auto md:grid-cols-2">
@@ -150,10 +156,10 @@
               </div>
               <div>
                 <h6 class="mb-3 text-lg font-semibold leading-5">
-                  Full Service
+                  {{ $t('enterprise.service_full_title') }}
                 </h6>
                 <p class="mb-3">
-                  A full service offering where we provide Manjaro based workstations, thin clients and laptops together with our hardware partner. We take care of setup and management afterwards.
+                  {{ $t('enterprise.service_full_description') }}
                 </p>
               </div>
             </div>
@@ -177,10 +183,10 @@
               </div>
               <div>
                 <h6 class="mb-3 text-lg font-semibold leading-5">
-                  Conversions
+                  {{ $t('enterprise.service_conversions_title') }}
                 </h6>
                 <p class="mb-3">
-                  We convert your workstations based until now on other Linux distributions or proprietary systems to Manjaro. We will also provide open-source alternatives for your internal services.
+                  {{ $t('enterprise.service_conversions_description') }}
                 </p>
               </div>
             </div>
@@ -202,10 +208,10 @@
               </div>
               <div>
                 <h6 class="mb-3 text-lg font-semibold leading-5">
-                  Aftermarket
+                  {{ $t('enterprise.service_aftermarket_title') }}
                 </h6>
                 <p class="mb-3">
-                  In case you are already using Manjaro we provide maintainence services for your installations and help you integrate your Manjaro systems with internal platforms.
+                  {{ $t('enterprise.service_aftermarket_description') }}
                 </p>
               </div>
             </div>
@@ -226,10 +232,10 @@
               </div>
               <div>
                 <h6 class="mb-3 text-lg font-semibold leading-5">
-                  Add-on: Business Cloud
+                  {{ $t('enterprise.service_cloud_title') }}
                 </h6>
                 <p class="mb-3">
-                  Additional to all our services you can ask us to setup an open-source cloud and on-premise server infrastructure that interacts seamlessly with your Manjaro devices.
+                  {{ $t('enterprise.service_cloud_description') }}
                 </p>
               </div>
             </div>
@@ -244,10 +250,10 @@
     >
       <div class="max-w-xl mb-6 md:mx-auto sm:text-center lg:max-w-2xl">
         <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase">
-          Contact Us
+          {{ $t('enterprise.contact_header') }}
         </p>
         <h2 class="text-2xl font-medium">
-          Let Us Find the Right Solution for You
+          {{ $t('enterprise.contact_title') }}
         </h2>
       </div>
       <div class="flex justify-center">
@@ -263,7 +269,7 @@
           </div>
           <div class="px-6 py-8 border border-t-0 dark:border-gray-700 rounded-b sm:px-8">
             <p class="mb-5">
-              Reach out to discuss your needs and how we can help your business to make effective use of Manjaro Linux and other open-source software.
+              {{ $t('enterprise.contact_description') }}
             </p>
             <div class="flex justify-center gap-4">
               <button
@@ -273,7 +279,7 @@
                   href="mailto:info@manjaro.org"
                   target="_blank"
                 >
-                  Email
+                  {{ $t('enterprise.email') }}
                 </NuxtLink>
               </button>
               <button
@@ -283,7 +289,7 @@
                   href="tel:00493022012303"
                   target="_blank"
                 >
-                  Phone
+                  {{ $t('enterprise.phone') }}
                 </NuxtLink>
               </button>
             </div>
@@ -295,11 +301,13 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 useHead({
-  title: 'Enterprise Services',
+  title: t('enterprise.meta_title'),
 })
 useServerSeoMeta({
-  ogTitle: 'Manjaro Enterprise Services',
-  description: 'The Manjaro company supports businesses with the setup and management of their Manjaro Linux systems.',
+  ogTitle: t('enterprise.meta_og_title'),
+  description: t('enterprise.meta_description'),
 })
 </script>

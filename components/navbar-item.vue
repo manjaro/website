@@ -49,7 +49,7 @@
                 :aria-current="getAriaCurrent('products')"
                 @click="hideDropDownMenu"
               >
-                Products
+                {{ $t('navbar.products') }}
               </NuxtLink>
             </li>
             <li>
@@ -59,7 +59,7 @@
                 :aria-current="getAriaCurrent('enterprise')"
                 @click="hideDropDownMenu"
               >
-                Enterprise
+                {{ $t('navbar.enterprise') }}
               </NuxtLink>
             </li>
             <li>
@@ -69,7 +69,7 @@
                 :aria-current="getAriaCurrent('help')"
                 @click="hideDropDownMenu"
               >
-                Help
+                {{ $t('navbar.help') }}
               </NuxtLink>
             </li>
             <li>
@@ -79,13 +79,14 @@
                 :aria-current="getAriaCurrent('news')"
                 @click="hideDropDownMenu"
               >
-                News
+                {{ $t('navbar.news') }}
               </NuxtLink>
             </li>
           </ul>
           <div class="divider" />
-          <div class="self-center">
-            <div class="flex gap-3 items-center">
+          <div class="flex flex-col items-center gap-3">
+            <LanguageSwitcher class="w-full px-4" />
+            <div class="flex justify-between items-center w-full gap-3 px-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -129,7 +130,9 @@
                 class="px-2"
                 :class="getLinkStyle('products')"
                 :aria-current="getAriaCurrent('products')"
-              >Products</NuxtLink>
+              >
+                {{ $t('navbar.products') }}
+              </NuxtLink>
             </li>
             <li>
               <NuxtLink
@@ -138,7 +141,8 @@
                 :class="getLinkStyle('enterprise')"
                 :aria-current="getAriaCurrent('enterprise')"
               >
-                Enterprise</NuxtLink>
+                {{ $t('navbar.enterprise') }}
+              </NuxtLink>
             </li>
             <li>
               <NuxtLink
@@ -147,7 +151,8 @@
                 :class="getLinkStyle('help')"
                 :aria-current="getAriaCurrent('help')"
               >
-                Help</NuxtLink>
+                {{ $t('navbar.help') }}
+              </NuxtLink>
             </li>
             <li>
               <NuxtLink
@@ -156,9 +161,11 @@
                 :class="getLinkStyle('news')"
                 :aria-current="getAriaCurrent('news')"
               >
-                News</NuxtLink>
+                {{ $t('navbar.news') }}
+              </NuxtLink>
             </li>
           </ul>
+          <LanguageSwitcher />
           <button
             class="btn btn-sm btn-ghost"
             @click="toggleTheme"

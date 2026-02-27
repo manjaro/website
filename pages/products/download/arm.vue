@@ -5,10 +5,10 @@
       <div class="container px-5 pt-8 mx-auto">
         <div class="flex flex-col text-center w-full mb-14">
           <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
-            ARM Images
+            {{ $t('download.arm_title') }}
           </h1>
           <p class="lg:w-2/3 mx-auto leading-relaxed">
-            Provided by the Manjaro ARM Team
+            {{ $t('download.arm_subtitle') }}
           </p>
         </div>
       </div>
@@ -32,8 +32,7 @@
             <IsoCard
               v-for="(iso, title) of isos.arm[selectedDevice]"
               :key="title"
-              :desktop-id="title"
-              :desktop-data="getDesktopData(title)"
+              :desktop-id="title.toString()"
               :iso-data="iso"
               :show-details="title == latestDetailCard"
               @details-toggled="handleDetailsClick"
@@ -65,14 +64,14 @@
 </template>
 
 <script setup lang="ts">
-import desktops from '~/assets/desktops.json'
+const { t } = useI18n()
 
 useHead({
-  title: 'Download ARM',
+  title: t('download.meta_arm_title'),
 })
 useServerSeoMeta({
-  ogTitle: 'Manjaro ARM Image Downloads',
-  description: 'Choose from major Linux Desktop environments to run Manjaro on a multitude of ARM devices.',
+  ogTitle: t('download.meta_arm_og_title'),
+  description: t('download.meta_arm_description'),
 })
 
 const { data } = await useFetch('https://gitlab.manjaro.org/api/v4/projects/12597/repository/files/file-info.json/raw', {
@@ -80,17 +79,15 @@ const { data } = await useFetch('https://gitlab.manjaro.org/api/v4/projects/1259
 })
 const isos = JSON.parse(data?.value as string)
 
-const getDesktopData = (title: string) => {
-  return desktops[title]
-}
-
 const route = useRoute()
 const router = useRouter()
 
 const getActiveDevice = () => {
-  if (route.query.device) {
+  const deviceQuery = route.query.device
+  if (deviceQuery) {
+    const deviceStr = Array.isArray(deviceQuery) ? deviceQuery[0] : deviceQuery
     for (const device in isos.arm) {
-      if (device === route.query.device) {
+      if (device === deviceStr) {
         return device
       }
     }
@@ -112,7 +109,9 @@ watch(selectedDevice, (selectedDevice) => {
 
 // When the query changes, update the selection.
 watch(() => route.query.device, (device) => {
-  selectedDevice.value = device
+  if (device) {
+    selectedDevice.value = Array.isArray(device) ? device[0]! : device
+  }
 },
 )
 

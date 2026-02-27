@@ -5,10 +5,10 @@
       <div class="container px-5 pt-8 mx-auto">
         <div class="flex flex-col text-center w-full mb-14">
           <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
-            Official Images
+            {{ $t('download.x86_title') }}
           </h1>
           <p class="lg:w-2/3 mx-auto leading-relaxed">
-            Provided by the Manjaro Team
+            {{ $t('download.x86_subtitle') }}
           </p>
         </div>
       </div>
@@ -17,8 +17,7 @@
           <IsoCard
             v-for="(iso, title) of isos.official"
             :key="title"
-            :desktop-id="title"
-            :desktop-data="getDesktopData(title)"
+            :desktop-id="title.toString()"
             :iso-data="iso"
             :show-details="title == latestDetailCard"
             @details-toggled="handleDetailsClick"
@@ -29,10 +28,10 @@
       <div class="container px-5 pt-16 mx-auto">
         <div class="flex flex-col text-center w-full mb-14">
           <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 dark:text-gray-200 tracking-widest">
-            Community Images
+            {{ $t('download.community_title') }}
           </h1>
           <p class="lg:w-2/3 mx-auto leading-relaxed">
-            Maintained by Manjaro Community Members
+            {{ $t('download.community_subtitle') }}
           </p>
         </div>
       </div>
@@ -41,8 +40,7 @@
           <IsoCard
             v-for="(iso, title) of isos.community"
             :key="title"
-            :desktop-id="title"
-            :desktop-data="getDesktopData(title)"
+            :desktop-id="title.toString()"
             :iso-data="iso"
             :show-details="title == latestDetailCard"
             @details-toggled="handleDetailsClick"
@@ -54,24 +52,20 @@
 </template>
 
 <script setup lang="ts">
-import desktops from '~/assets/desktops.json'
+const { t } = useI18n()
 
 useHead({
-  title: 'Download x86',
+  title: t('download.meta_x86_title'),
 })
 useServerSeoMeta({
-  ogTitle: 'Manjaro Image Downloads',
-  description: 'Choose from major Linux Desktop environments to run Manjaro on your computer.',
+  ogTitle: t('download.meta_x86_og_title'),
+  description: t('download.meta_x86_description'),
 })
 
 const { data } = await useFetch('https://gitlab.manjaro.org/api/v4/projects/12597/repository/files/file-info.json/raw', {
   query: { ref: 'master' },
 })
 const isos = JSON.parse(data?.value as string)
-
-const getDesktopData = (title: string) => {
-  return desktops[title]
-}
 
 const latestDetailCard = ref('')
 

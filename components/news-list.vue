@@ -2,10 +2,10 @@
   <section class="pt-12 px-4 mx-auto max-w-screen-xl body-font">
     <div class="flex flex-col text-center w-full mb-14">
       <h1 class="text-3xl font-medium mb-4">
-        News and Announcements
+        {{ $t('news.title') }}
       </h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-700 dark:text-gray-400">
-        Articles about development and organization of the Manjaro project
+        {{ $t('news.description') }}
       </p>
     </div>
 
@@ -19,7 +19,7 @@
         <div>
           <NuxtImg
             :src="getImagePath(item._path!, item.image!)"
-            alt="News article header picture"
+            :alt="$t('news.img_alt')"
             class="w-full h-52 object-cover"
             width="500px"
           />
@@ -57,12 +57,14 @@
 <script setup lang="ts">
 import { useTimeAgo } from '@vueuse/core'
 
+const { t } = useI18n()
+
 useHead({
-  title: 'News',
+  title: t('navbar.news'),
 })
 useServerSeoMeta({
-  ogTitle: 'Manjaro News',
-  description: 'Articles about development and organization of the Manjaro project.',
+  ogTitle: t('news.title'),
+  description: t('news.description'),
 })
 
 const getImagePath = (path: string, file: string) => {

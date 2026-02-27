@@ -6,7 +6,7 @@
     >
       <NuxtImg
         :src="'/desktops/' + desktopId + '.webp'"
-        alt="Desktop image"
+        :alt="$t('iso.card_alt')"
         width="400"
         class="relative object-cover h-[180px]"
       />
@@ -22,13 +22,13 @@
       class="card-body"
     >
       <h2 class="card-title">
-        {{ desktopData.name }}
+        {{ $t(`desktops.${desktopId}.name`) }}
       </h2>
-      <p>{{ desktopData.description }}</p>
+      <p>{{ $t(`desktops.${desktopId}.description`) }}</p>
       <div class="flex flex-row mt-4 card-actions">
         <NuxtLink :href="getDownloadLink()">
           <button class="btn btn-primary">
-            Download
+            {{ $t('common.download') }}
           </button>
         </NuxtLink>
         <button
@@ -36,7 +36,7 @@
           class="btn"
           @click="enableDetails"
         >
-          More
+          {{ $t('iso.more') }}
         </button>
       </div>
     </div>
@@ -45,7 +45,7 @@
       class="card-body"
     >
       <h2 class="card-title">
-        {{ desktopData.name }}
+        {{ $t(`desktops.${desktopId}.name`) }}
       </h2>
       <p class="flex justify-center pb-2">
         <span class="grid grid-cols-1 self-center gap-8 pt-2">
@@ -60,10 +60,10 @@
               @click="toggleFullImage"
             >
             <div class="font-bold absolute left-5">
-              Minimal
+              {{ $t('iso.minimal') }}
             </div>
             <div class="font-bold absolute right-14">
-              Full
+              {{ $t('iso.full') }}
             </div>
           </div>
           <div class="grid grid-cols-2 gap-4">
@@ -71,31 +71,31 @@
               class="btn btn-secondary w-100"
               :href="getDetailEntry('torrent')"
             >
-              Torrent
+              {{ $t('iso.torrent') }}
             </NuxtLink>
             <NuxtLink
               class="btn btn-primary w-100"
               :href="getDetailEntry('image')"
             >
-              Image
+              {{ $t('iso.image') }}
             </NuxtLink>
             <NuxtLink
               v-if="getDetailEntry('signature')"
               class="btn btn-accent w-100"
               :href="getDetailEntry('signature')"
             >
-              Signature
+              {{ $t('iso.signature') }}
             </NuxtLink>
             <NuxtLink
               class="btn btn-info w-100"
               :href="getDetailEntry('checksum')"
             >
-              Checksum
+              {{ $t('iso.checksum') }}
             </NuxtLink>
           </div>
           <div class="flex justify-center tracking-tight text-sm gap-2 items-center">
             <div class="text-gray-500 dark:text-gray-600">
-              Download provided by
+              {{ $t('iso.provided_by') }}
             </div>
             <div class="bg-gray-300 dark:bg-gray-600 p-1 px-2 rounded-lg">
               <NuxtLink
@@ -116,7 +116,7 @@
           class="btn"
           @click="disableDetails"
         >
-          Back
+          {{ $t('iso.back') }}
         </button>
       </div>
     </div>
@@ -126,7 +126,6 @@
 <script setup lang="ts">
 const props = defineProps({
   desktopId: { type: String, required: true },
-  desktopData: { type: Object, required: true },
   isoData: { type: Object, required: true },
   showDetails: { type: Boolean, required: true },
 })
@@ -184,7 +183,8 @@ if (props.isoData?.image) {
       day: 'numeric',
     }
 
-    dateFromLink.value = dateObj.toLocaleDateString(undefined, options)
+    const { locale } = useI18n()
+    dateFromLink.value = dateObj.toLocaleDateString(locale.value, options)
   }
 }
 </script>

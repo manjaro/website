@@ -3,13 +3,13 @@
     <div class="px-4 pt-8 mx-auto md:max-w-full lg:max-w-screen-xl">
       <div class="flex flex-col text-center w-full mb-12">
         <h2 class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase">
-          Help Resources
+          {{ $t('help.header') }}
         </h2>
         <h1 class="text-3xl font-medium title-font mb-4">
-          Get Help for Your Manjaro Install
+          {{ $t('help.title') }}
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700 dark:text-gray-400">
-          We offer various free means to solve problems and professional support.
+          {{ $t('help.description') }}
         </p>
       </div>
       <div class="mx-auto flex flex-wrap max-w-[1200px] xl:max-w-max xl:px-4">
@@ -22,16 +22,17 @@
             />
           </div>
           <h2 class="text-lg sm:text-xl font-medium title-font mb-2">
-            Documentation
+            {{ $t('help.doc_title') }}
           </h2>
           <p class="leading-relaxed text-base mb-4 text-gray-700 dark:text-gray-300">
-            Browse our documentation to get started with Manjaro or read up on advanced topics.
+            {{ $t('help.doc_p') }}
           </p>
           <NuxtLink
             href="https://wiki.manjaro.org/"
             target="_blank"
             class="text-primary inline-flex items-center"
-          >Visit the Wiki
+          >
+            {{ $t('help.doc_link') }}
             <svg
               fill="none"
               stroke="currentColor"
@@ -54,16 +55,17 @@
             />
           </div>
           <h2 class="text-lg sm:text-xl font-medium title-font mb-2">
-            Forum
+            {{ $t('help.forum_title') }}
           </h2>
           <p class="leading-relaxed text-base mb-4 text-gray-700 dark:text-gray-300">
-            The official Manjaro Forum is a longstanding institution for user-to-user help.
+            {{ $t('help.forum_p') }}
           </p>
           <NuxtLink
             href="https://forum.manjaro.org"
             target="_blank"
             class="text-primary inline-flex items-center"
-          >Visit the Forum
+          >
+            {{ $t('help.forum_link') }}
             <svg
               fill="none"
               stroke="currentColor"
@@ -86,16 +88,17 @@
             />
           </div>
           <h2 class="text-lg sm:text-xl font-medium title-font mb-2">
-            Arch Wiki
+            {{ $t('help.arch_wiki_title') }}
           </h2>
           <p class="leading-relaxed text-base mb-4 text-gray-700 dark:text-gray-300">
-            This Wiki is a formidable resource for learning about the Arch based Manjaro too.
+            {{ $t('help.arch_wiki_p') }}
           </p>
           <NuxtLink
             href="https://wiki.archlinux.org"
             target="_blank"
             class="text-primary inline-flex items-center"
-          >Visit the Wiki
+          >
+            {{ $t('help.arch_wiki_link') }}
             <svg
               fill="none"
               stroke="currentColor"
@@ -117,15 +120,16 @@
             />
           </div>
           <h2 class="text-lg sm:text-xl font-medium title-font mb-2">
-            Professional Support
+            {{ $t('help.support_title') }}
           </h2>
           <p class="leading-relaxed text-base mb-4 text-gray-700 dark:text-gray-300">
-            The Manjaro company offers reliable professional support for businesses.
+            {{ $t('help.support_p') }}
           </p>
           <NuxtLink
             href="/enterprise"
             class="text-primary inline-flex items-center"
-          >Learn More
+          >
+            {{ $t('help.support_link') }}
             <svg
               fill="none"
               stroke="currentColor"
@@ -145,11 +149,13 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 useHead({
-  title: 'Help',
+  title: t('help.meta_title'),
 })
 useServerSeoMeta({
-  ogTitle: 'Manjaro Help Resources',
-  description: 'Get help for your Manjaro install through various free resources.',
+  ogTitle: t('help.meta_og_title'),
+  description: t('help.meta_description'),
 })
 </script>
